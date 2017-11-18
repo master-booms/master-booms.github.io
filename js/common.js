@@ -17,6 +17,21 @@
   });
 
 
+  //mobile
+  var touch = $('.burger-menu');
+  var menu = $('.header-mnu.js__mnu');
+ 
+  $(touch).on('click', function(e) {
+    e.preventDefault();
+    menu.slideToggle();
+  });
+  $(window).resize(function(){
+    var w = $(window).width();
+    if(w > 760 && menu.is(':hidden')) {
+      menu.removeAttr('style');
+    }
+  });
+
 
 
 

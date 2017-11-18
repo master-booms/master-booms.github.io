@@ -32,6 +32,7 @@
                             <div class="header-logo">
                                 <a href="#" class="header-logo__link">GoNurse</a>
                             </div>
+
                             <nav>
                                 <ul class="header-mnu">
                                     <li class="header-mnu__item">
@@ -53,6 +54,46 @@
                                 </ul>
                             </nav>
                         </div>
+                        <!-- mobile-menu begin -->
+                        <div  class="mobile-menu">
+                            <div class="burger-menu"><i class="fa fa-bars"></i></div>
+                                    <ul class="header-mnu js__mnu">
+                                <li class="header-mnu__item">
+                            <a href="#" class="header-ava " style="background: url(img/ava.png) no-repeat">
+                                <span class="header-ava__dott offline"></span>
+                               <!--  <span class="header-ava__dott online"></span> -->
+                            </a> 
+                             <a href="#" class="btn btn__header ">
+                               <i class="fa fa-plus-square" aria-hidden="true"></i>Post jobs Free
+                            </a> 
+
+                                </li>
+
+                                <li class="header-mnu__item">
+                                    <a href="#" class="header-mnu__link">Write Review</a>
+                                </li>
+                                <li class="header-mnu__item">
+                                    <a href="#" class="header-mnu__link">For Employers</a>
+                                </li>                                    
+                                        <li class="header-mnu__item">
+                                            <a href="#" class="header-mnu__link">Jobs</a>
+                                        </li>
+                                        <li class="header-mnu__item">
+                                            <a href="#" class="header-mnu__link">Company Reviews</a>
+                                        </li>
+                                        <li class="header-mnu__item">
+                                            <a href="#" class="header-mnu__link">Salaries</a>
+                                        </li>
+                                        <li class="header-mnu__item">
+                                            <a href="#" class="header-mnu__link">Interviews</a>
+                                        </li>
+                                        <li class="header-mnu__item">
+                                            <a href="#" class="header-mnu__link">Your Worth</a>
+                                        </li>
+                                        
+                                    </ul>
+                        </div>
+                        <!-- mobile-menu end -->
                         <div class="header__right">
                          
                             <ul class="header-mnu">
@@ -63,11 +104,11 @@
                                     <a href="#" class="header-mnu__link">For Employers</a>
                                 </li>
                             </ul> 
-                            <div class="search-burger js__searchBurger"><i class="fa fa-search"></i></div>
-                            <a href="#" class="btn btn__header">
+                            
+                            <a href="#" class="btn btn__header mobile-hidden">
                                <i class="fa fa-plus-square" aria-hidden="true"></i>Post jobs Free
                             </a> 
-                            <a href="#" class="header-ava" style="background: url(img/ava.png) no-repeat">
+                            <a href="#" class="header-ava mobile-hidden" style="background: url(img/ava.png) no-repeat">
                                 <span class="header-ava__dott offline"></span>
                                <!--  <span class="header-ava__dott online"></span> -->
                             </a>                            
@@ -78,10 +119,12 @@
                     <div class="header__bottom">
                        <div class="container">
                         
-                           <div class="search">
-                               <div class="search__input search__input_first"><i class="fa fa-search" aria-hidden="true"></i><input type="search" placeholder="Job Title, Keywords, or Company"></div>
-                               <div class="search__input search__input_second"><i class="fa fa-globe" aria-hidden="true"></i><input type="text" placeholder="Location"></div>
-                               <div class="search__select"><i class="fa fa-briefcase" aria-hidden="true"></i>
+                           <form class="search">
+                               <div class="search__input search__input_first">
+                                <button type="submit" class="dekstop-hidden search__buttonMobile"><i class="fa fa-search  " aria-hidden="true"></i></button>
+                               <i class="fa fa-search mobile-hidden " aria-hidden="true"></i><input type="search" placeholder="Job Title, Keywords, or Company"></div>
+                               <div class="search__input search__input_second mobile-hidden "><i class="fa fa-globe" aria-hidden="true"></i><input type="text" placeholder="Location"></div>
+                               <div class="search__select mobile-hidden "><i class="fa fa-briefcase" aria-hidden="true"></i>
                                <select id="select-search" class="js__select">
 
                                     <option>Jobs</option>
@@ -89,8 +132,8 @@
                                     <option>Jobs3</option>
                                 </select>
                                     </div>
-                               <button class="search__button btn">Search</button>
-                           </div>
+                               <button type="submit" class="search__button btn mobile-hidden ">Search</button>
+                           </form>
                        </div>
                     </div>
 

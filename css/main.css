@@ -5410,6 +5410,10 @@ input:focus {
     margin-bottom: 10px;
   }
 
+  .search__input_bottom {
+    margin-bottom: 10px;
+  }
+
   .search__select {
     width: 100%;
     margin-bottom: 10px;

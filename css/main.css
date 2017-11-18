@@ -4115,6 +4115,7 @@ input:focus {
   justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  padding-top: 15px;
 }
 
 .search__input {
@@ -4129,7 +4130,7 @@ input:focus {
 }
 
 .search__input_first {
-  width: 591px;
+  width: 634px;
 }
 
 .search__input_first i {
@@ -4194,7 +4195,7 @@ input:focus {
   appearance: none;
   border: 1px solid #e8e8e8;
   background: url(../img/shape.png) no-repeat;
-  background-position: 90% center;
+  background-position: 95% center;
 }
 
 .search__select select:focus {
@@ -4265,6 +4266,7 @@ input:focus {
   margin-left: 1%;
   border: 1px solid #f5f5f5;
   background-color: #ffffff;
+  border-radius: 6px;
 }
 
 .aside {
@@ -4272,6 +4274,7 @@ input:focus {
   border: 1px solid #f5f5f5;
   background-color: #ffffff;
   margin-right: 15px;
+  border-radius: 6px;
 }
 
 .aside__moreLink {
@@ -4320,6 +4323,10 @@ input:focus {
   position: absolute;
   left: 16px;
   top: 12px;
+}
+
+.aside__title_top {
+  border-top: none;
 }
 
 .aside__title_icon i {
@@ -4516,7 +4523,7 @@ input:focus {
 }
 
 .footer {
-  padding: 40px;
+  padding: 18px 0;
   border-top: 1px solid #f5f5f5;
   background: #fff;
 }
@@ -5305,6 +5312,10 @@ input:focus {
   .search__select {
     width: 100%;
     margin-bottom: 10px;
+  }
+
+  .search__select select {
+    background-position: 98% center;
   }
 
   .search__button {

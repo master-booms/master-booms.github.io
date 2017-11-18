@@ -5377,6 +5377,7 @@ input:focus {
     display: inline-block;
     vertical-align: middle;
     margin-left: 10px;
+    margin-top: 0;
   }
 
   .btn__header {

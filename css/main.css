@@ -4215,9 +4215,8 @@ input:focus {
 }
 
 .search__select {
-  width: 261px;
+  width: 100%;
   position: relative;
-  min-width: 261px;
 }
 
 .search__select_col {

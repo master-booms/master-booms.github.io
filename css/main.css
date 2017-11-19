@@ -4272,6 +4272,10 @@ input:focus {
   line-height: 40px;
 }
 
+.search__button_2 {
+  width: 100%;
+}
+
 .search__button_col {
   display: inline-block;
   vertical-align: middle;

@@ -355,8 +355,8 @@ hr {
 }
 
 .row {
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 .col-xs-1,
@@ -409,8 +409,8 @@ hr {
 .col-lg-12 {
   position: relative;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .col-xs-1,
@@ -4141,31 +4141,9 @@ input:focus {
   margin-right: -7.5px;
 }
 
-.search__row::after {
-  clear: both;
-  content: "";
-  display: table;
-}
-
 .search__input {
   position: relative;
   height: 46px;
-}
-
-.search__input_col {
-  float: left;
-  margin-left: 7.5px;
-  margin-right: 7.5px;
-}
-
-.search__input_col-1 {
-  width: 530px;
-  min-width: 530px;
-}
-
-.search__input_col-2 {
-  width: 401px;
-  min-width: 401px;
 }
 
 .search__input i {
@@ -4193,6 +4171,10 @@ input:focus {
   color: #cacaca;
 }
 
+.search__input_main i {
+  left: 28px;
+}
+
 .search__input input {
   width: 100%;
   height: 46px;
@@ -4215,19 +4197,8 @@ input:focus {
 }
 
 .search__select {
-  width: 100%;
+  width: 261px;
   position: relative;
-}
-
-.search__select_col {
-  float: left;
-  margin-left: 7.5px;
-  margin-right: 7.5px;
-}
-
-.search__select_col-3 {
-  width: 303px;
-  min-width: 303px;
 }
 
 .search__select i {
@@ -4237,6 +4208,14 @@ input:focus {
   top: 15px;
   color: #cacaca;
   z-index: 999;
+}
+
+.search__select_main {
+  width: 100%;
+}
+
+.search__select_main i {
+  left: 28px;
 }
 
 .search__select select {
@@ -4273,13 +4252,6 @@ input:focus {
 
 .search__button_2 {
   width: 100%;
-}
-
-.search__button_col {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 7.5px;
-  margin-right: 7.5px;
 }
 
 .search__buttonMobile {
@@ -4589,6 +4561,54 @@ input:focus {
   text-align: center;
   display: inline-block;
   vertical-align: middle;
+}
+
+.pagination-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.pagination__results {
+  color: #393939;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 300;
+  margin-right: 10px;
+}
+
+.pagination__link {
+  color: #393939;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 300;
+  min-width: 27px;
+  display: inline-block;
+  height: 27px;
+  text-align: center;
+  line-height: 26px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+}
+
+.pagination__link:hover {
+  background-color: #4285f4;
+  color: #fff;
+  text-decoration: none;
+}
+
+.pagination__link_active {
+  width: 27px;
+  height: 27px;
+  border: 1px solid #4285f4;
+  border-radius: 6px;
+}
+
+.pagination__link_next {
+  padding: 0 5px;
 }
 
 .wrapper {
@@ -5339,11 +5359,6 @@ input:focus {
 }
 
 @media screen and (max-width: 1440px) {
-  .search__input_col-1 {
-    width: 365px;
-    min-width: 365px;
-  }
-
   .search__input_first {
     width: 450px;
     min-width: 450px;
@@ -5428,17 +5443,6 @@ input:focus {
     margin-left: 5px;
   }
 
-  .search__input_col-1 {
-    width: 100%;
-    min-width: 100%;
-  }
-
-  .search__input_col-2 {
-    width: 100%;
-    min-width: 100%;
-    margin-bottom: 10px;
-  }
-
   .search__input_first {
     width: 100%;
     min-width: 100%;
@@ -5450,19 +5454,27 @@ input:focus {
     margin-bottom: 10px;
   }
 
-  .search__input_bottom {
+  .search__input_main {
+    width: 100%;
     margin-bottom: 10px;
   }
 
-  .search__select_col-3 {
-    width: 100%;
-    min-width: 100%;
+  .search__input_bottom {
+    margin-bottom: 10px;
   }
 
   .search__select {
     width: 100%;
     min-width: 100%;
     margin-bottom: 10px;
+  }
+
+  .search__select select {
+    background-position: 98% center;
+  }
+
+  .search__button_wrap {
+    width: 100% !important;
   }
 
   .search__button {
@@ -5473,10 +5485,6 @@ input:focus {
 @media screen and (max-width: 990px) {
   .search-burger {
     display: block;
-  }
-
-  .search__select select {
-    background-position: 98% center;
   }
 
   .main__row {

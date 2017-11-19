@@ -4135,9 +4135,37 @@ input:focus {
   align-items: center;
 }
 
+.search__row {
+  display: block;
+  margin-left: -7.5px;
+  margin-right: -7.5px;
+}
+
+.search__row::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
 .search__input {
   position: relative;
   height: 46px;
+}
+
+.search__input_col {
+  float: left;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+}
+
+.search__input_col-1 {
+  width: 530px;
+  min-width: 530px;
+}
+
+.search__input_col-2 {
+  width: 401px;
+  min-width: 401px;
 }
 
 .search__input i {
@@ -4192,6 +4220,17 @@ input:focus {
   min-width: 261px;
 }
 
+.search__select_col {
+  float: left;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+}
+
+.search__select_col-3 {
+  width: 303px;
+  min-width: 303px;
+}
+
 .search__select i {
   position: absolute;
   font-size: 17px;
@@ -4231,6 +4270,13 @@ input:focus {
   width: 131px;
   height: 46px;
   line-height: 40px;
+}
+
+.search__button_col {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
 }
 
 .search__buttonMobile {
@@ -5290,6 +5336,11 @@ input:focus {
 }
 
 @media screen and (max-width: 1440px) {
+  .search__input_col-1 {
+    width: 365px;
+    min-width: 365px;
+  }
+
   .search__input_first {
     width: 450px;
     min-width: 450px;
@@ -5351,8 +5402,8 @@ input:focus {
 
   .header-mnu__link {
     font-size: 12px;
-    font-weight: 400;
-    padding: 0px 10px;
+    font-weight: 300;
+    padding: 5px 10px;
     padding-left: 0;
   }
 
@@ -5374,6 +5425,17 @@ input:focus {
     margin-left: 5px;
   }
 
+  .search__input_col-1 {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .search__input_col-2 {
+    width: 100%;
+    min-width: 100%;
+    margin-bottom: 10px;
+  }
+
   .search__input_first {
     width: 100%;
     min-width: 100%;
@@ -5389,6 +5451,11 @@ input:focus {
     margin-bottom: 10px;
   }
 
+  .search__select_col-3 {
+    width: 100%;
+    min-width: 100%;
+  }
+
   .search__select {
     width: 100%;
     min-width: 100%;
@@ -5401,10 +5468,6 @@ input:focus {
 }
 
 @media screen and (max-width: 990px) {
-  .header__left {
-    margin-bottom: 8px;
-  }
-
   .search-burger {
     display: block;
   }
@@ -5434,7 +5497,6 @@ input:focus {
 
 @media screen and (max-width: 768px) {
   .header__left {
-    margin-bottom: 7px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;

@@ -5376,10 +5376,12 @@ input:focus {
 
   .search__input_first {
     width: 100%;
+    min-width: 100%;
   }
 
   .search__input_second {
     width: 100%;
+    min-width: 100%;
     margin-bottom: 10px;
   }
 
@@ -5389,6 +5391,7 @@ input:focus {
 
   .search__select {
     width: 100%;
+    min-width: 100%;
     margin-bottom: 10px;
   }
 

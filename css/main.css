@@ -4563,6 +4563,10 @@ input:focus {
   vertical-align: middle;
 }
 
+.pagination-wrapper {
+  margin-bottom: 40px;
+}
+
 .pagination-right {
   display: -webkit-box;
   display: -ms-flexbox;

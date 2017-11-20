@@ -5601,6 +5601,10 @@ input:focus {
   .listing-right {
     text-align: left;
   }
+
+  .wrapper-tabs .tab {
+    padding: 0 15px;
+  }
 }
 
 @media (max-width: 767px) {

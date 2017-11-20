@@ -41,11 +41,13 @@ $(".js__sticker").sticky({
   topSpacing: 1
 })
 
+//jQuery:
+$(".tab__item").not(":first").hide();
+$(".wrapper-tabs .tab").click(function() {
+  $(".wrapper-tabs .tab").removeClass("active").eq($(this).index()).addClass("active");
+  $(".tab__item").hide().eq($(this).index()).fadeIn()
+}).eq(0).addClass("active");
 
-
-// $(".js__select, .js__selectAside").select2({
-//   minimumResultsForSearch: 1 / 0
-// })
 
 
 

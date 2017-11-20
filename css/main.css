@@ -4322,6 +4322,7 @@ input:focus {
   border: 1px solid #f5f5f5;
   background-color: #ffffff;
   border-radius: 6px;
+  margin-top: 30px;
 }
 
 .aside {
@@ -4391,6 +4392,31 @@ input:focus {
 
 .aside__ul {
   padding: 10px 16px;
+}
+
+.aside__item input[type=checkbox] {
+  display: none;
+}
+
+.aside__item input[type=checkbox] + label:before {
+  font-family: FontAwesome;
+  display: inline-block;
+}
+
+.aside__item input[type=checkbox] + label:before {
+  content: "\f096";
+}
+
+.aside__item input[type=checkbox] + label:before {
+  letter-spacing: 10px;
+}
+
+.aside__item input[type=checkbox]:checked + label:before {
+  content: "\f046";
+}
+
+.aside__item input[type=checkbox]:checked + label:before {
+  letter-spacing: 5px;
 }
 
 .aside__link {
@@ -4644,6 +4670,43 @@ input:focus {
   line-height: 32px;
   letter-spacing: 0.25px;
   display: block;
+}
+
+.wrapper-tabs .class {
+  display: none;
+}
+
+.wrapper-tabs .class:first-child {
+  display: block;
+}
+
+.wrapper-tabs .tabs {
+  margin-top: -30px;
+  margin-left: 20px;
+}
+
+.wrapper-tabs .tab {
+  color: #898989;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 400;
+  border: 1px solid #ebebeb;
+  border-bottom: none;
+  display: inline-block;
+  padding: 0px 20px;
+  height: 30px;
+  line-height: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: #FFF;
+  border-radius: 6px 6px 0 0;
+  cursor: pointer;
+}
+
+.wrapper-tabs .active {
+  color: #346df1;
+  border: 1px solid #346df1;
+  border-bottom: none;
 }
 
 @media (min-width: 768px) {

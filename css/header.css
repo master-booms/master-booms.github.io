@@ -2,12 +2,13 @@ body {
   color: #86939e;
   font-size: 14px;
   line-height: 22px;
-  background-color: #fafafa;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   overflow-x: hidden;
   min-width: 320px;
+  max-width: 1440px;
   margin: 0 auto;
+  background-color: #000;
 }
 
 .hidden {

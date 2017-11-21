@@ -13,14 +13,9 @@ $(window).scroll(function(e){
 
 
 
-// $(".header-menu a").click(function() {
-//   var e = $(this).attr("href");
-//   return $("body").animate({
-//     scrollTop: $(e).offset().top - 70
-//   }, 1e3), !1
-// });
 
 
-  $(".header-menu a").mPageScroll2id({
-    offset : 70
+
+  $(".service-block__link").mPageScroll2id({
+    offset : 150
   });

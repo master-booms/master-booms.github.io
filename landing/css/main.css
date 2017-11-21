@@ -4043,9 +4043,81 @@ button {
   background-size: cover;
 }
 
+.about-left--startup {
+  background: url(../img/about-startup.png) no-repeat left;
+  min-height: 497px;
+  background-position: center;
+  background-size: cover;
+}
+
+.about-left--service {
+  background: url(../img/about-service.png) no-repeat left;
+  min-height: 498px;
+  background-position: center;
+  background-size: cover;
+}
+
+.about-left--service3 {
+  background: url(../img/service-bg-3.png) no-repeat left;
+  min-height: 400px;
+  background-position: center;
+  background-size: cover;
+}
+
+.about-left--service4 {
+  background: url(../img/service-bg-4.png) no-repeat left;
+  min-height: 400px;
+  background-position: center;
+  background-size: cover;
+}
+
+.about-left--service5 {
+  background: url(../img/service-bg-5.png) no-repeat left;
+  min-height: 498px;
+  background-position: center;
+  background-size: cover;
+}
+
 .about-right {
   background-color: #000;
   width: 65%;
+}
+
+.about-right--graph {
+  background: url(../img/graph.png) no-repeat right bottom;
+  background-size: cover;
+}
+
+.about-right--triangleWhite {
+  position: relative;
+}
+
+.about-right--triangleWhite:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 27px 27.5px 0 27.5px;
+  border-color: #ffffff transparent transparent transparent;
+  position: absolute;
+  left: 20px;
+  top: 0;
+}
+
+.about-right--triangleBlack {
+  position: relative;
+}
+
+.about-right--triangleBlack:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 27px 27.5px 0 27.5px;
+  border-color: #000 transparent transparent transparent;
+  position: absolute;
+  left: 20px;
+  top: 0;
 }
 
 .about-right--white {
@@ -4054,6 +4126,25 @@ button {
 
 .about-title {
   margin-bottom: 32px;
+}
+
+.about-title h1 {
+  width: 350px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 1.06px;
+}
+
+.about-title--black h1 {
+  color: #000;
+  width: 100%;
+}
+
+.about-title--logo h1 {
+  width: 100%;
 }
 
 .about-title h2 {
@@ -4366,6 +4457,145 @@ button {
   -webkit-filter: grayscale(0);
 }
 
+.gallery {
+  padding: 100px 50px;
+  background: #fff;
+  text-align: center;
+}
+
+.gallery-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  width: 202px;
+  margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.gallery-item:hover .gallery-overflow {
+  opacity: 1;
+}
+
+.gallery-item a {
+  display: block;
+}
+
+.gallery-overflow {
+  position: absolute;
+  width: 99%;
+  height: 99%;
+  left: 0;
+  top: 0;
+  background-color: #000;
+  opacity: 0;
+  -webkit-transition: opacity .5s;
+  -o-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+.gallery-descr {
+  padding: 20px;
+}
+
+.gallery-title {
+  text-align: left;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 17px;
+  font-weight: 700;
+  letter-spacing: 0.53px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.gallery-title span {
+  font-weight: 400;
+  letter-spacing: 0.53px;
+  display: block;
+}
+
+.gallery-text {
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: left;
+  height: 100px;
+}
+
+.gallery-text p {
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 17px;
+  letter-spacing: 1.49px;
+}
+
+.service-block {
+  background-color: #FFF;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.service-block__title {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 30px;
+  color: #000000;
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 1.06px;
+  max-width: 534px;
+  line-height: 1.1;
+}
+
+.service-block__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.service-block__link {
+  display: block;
+  padding: 10px 35px;
+  margin-bottom: 35px;
+  margin-left: 17px;
+  margin-right: 17px;
+  text-align: center;
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+  background-color: #000000;
+  border: 2px solid transparent;
+}
+
+.service-block__link:hover {
+  color: #000;
+  text-decoration: none;
+  border: 2px solid #000;
+  background-color: #FFF;
+}
+
 .footer-center {
   max-width: 200px;
   margin: 0 auto;
@@ -4450,19 +4680,42 @@ button {
 
 .footer__link {
   display: block;
-  margin-left: 2px;
-  margin-right: 2px;
   text-align: center;
+  border: 1px solid transparent;
+  padding: 5px 10px;
 }
 
 .footer__link:last-child {
-  margin-left: 20px;
+  margin-left: 5px;
   margin-right: 0;
+}
+
+.footer__link:hover {
+  border: 1px solid #fff;
 }
 
 .footer__link i {
   color: #fff;
   font-size: 20px;
+}
+
+.footer__link i.fa-twitter {
+  padding-top: 2px;
+}
+
+a,
+button {
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+
+a:focus,
+a:active,
+button:focus,
+button:active {
+  text-decoration: none;
+  color: inherit;
 }
 
 @media (min-width: 768px) {
@@ -5189,6 +5442,18 @@ button {
     min-height: 500px;
   }
 
+  .about-left--service3 {
+    min-height: 350px;
+  }
+
+  .about-left--service4 {
+    min-height: 350px;
+  }
+
+  .about-left--service5 {
+    min-height: 350px;
+  }
+
   .about-right {
     padding-right: 50px;
     width: 50%;
@@ -5282,6 +5547,10 @@ button {
     padding-right: 20px;
   }
 
+  .about-title h1 {
+    width: 100%;
+  }
+
   .about-title h2 {
     width: 100%;
   }
@@ -5303,6 +5572,14 @@ button {
 
   .about-form--white {
     margin-bottom: 0;
+  }
+
+  .gallery {
+    padding: 50px 20px;
+  }
+
+  .service-block__link {
+    width: 100%;
   }
 
   .footer {
@@ -5363,6 +5640,12 @@ button {
 
   .header-menu ul li:last-child {
     margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .gallery {
+    padding: 30px;
   }
 }
 

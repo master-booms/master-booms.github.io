@@ -4073,7 +4073,7 @@ button {
 
 .about-left--service5 {
   background: url(../img/service-bg-5.png) no-repeat left;
-  min-height: 498px;
+  min-height: 420px;
   background-position: center;
   background-size: cover;
 }
@@ -4176,6 +4176,11 @@ button {
   padding-top: 150px;
 }
 
+.about-center--about {
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
 .about-btn {
   width: 215px;
   height: 51px;
@@ -4275,6 +4280,10 @@ button {
   margin-bottom: 10px;
 }
 
+.about-form__select--white .select-wrap {
+  border: 1px solid #000;
+}
+
 .about-form__select--white select {
   display: block;
   width: 100%;
@@ -4294,11 +4303,12 @@ button {
   appearance: none;
   background: url(../img/shape2.png) no-repeat;
   background-position: 97% center;
+  border-radius: 0 !important;
 }
 
 .about-form__select--white select {
   background-color: #FFF;
-  border: 1px solid #000;
+  border: 1px solid transparent;
   height: 51px;
   line-height: 51px;
   padding-left: 15px;
@@ -4548,7 +4558,7 @@ button {
 .service-block {
   background-color: #FFF;
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 75px;
 }
 
 .service-block__title {
@@ -4573,6 +4583,9 @@ button {
   justify-content: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .service-block__link {
@@ -5442,6 +5455,14 @@ button:active {
     min-height: 500px;
   }
 
+  .about-left--startup {
+    min-height: 450px;
+  }
+
+  .about-left--service {
+    min-height: 400px;
+  }
+
   .about-left--service3 {
     min-height: 350px;
   }
@@ -5471,6 +5492,25 @@ button:active {
 
   .about-center--three {
     padding-top: 75px;
+  }
+
+  .about-center--service3 {
+    padding-bottom: 30px;
+    padding-top: 80px;
+  }
+
+  .about-center--service4 {
+    padding-bottom: 30px;
+    padding-top: 80px;
+  }
+
+  .about-center--service5 {
+    padding-bottom: 30px;
+    padding-top: 80px;
+  }
+
+  .about-center--about {
+    padding-top: 40px;
   }
 
   .about-descr--black {
@@ -5561,6 +5601,21 @@ button:active {
     margin-left: 20px;
   }
 
+  .about-center--service3 {
+    padding-bottom: 30px;
+    padding-top: 80px;
+  }
+
+  .about-center--service4 {
+    padding-bottom: 30px;
+    padding-top: 80px;
+  }
+
+  .about-center--service5 {
+    padding-bottom: 30px;
+    padding-top: 80px;
+  }
+
   .about-btn {
     width: 100%;
   }
@@ -5576,6 +5631,11 @@ button:active {
 
   .gallery {
     padding: 50px 20px;
+  }
+
+  .service-block {
+    padding-bottom: 45px;
+    padding-top: 70px;
   }
 
   .service-block__link {

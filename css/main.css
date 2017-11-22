@@ -4639,6 +4639,10 @@ input:focus {
   padding: 0 5px;
 }
 
+.banner-wrap {
+  overflow: hidden;
+}
+
 .banner {
   background-size: cover !important;
   background-position: center !important;

@@ -50,4 +50,30 @@ $(".wrapper-tabs .tab").click(function() {
 
 
 
+$(".tabHospital__item").not(":first").hide();
+$(".tabHospital-list .tabHospital").click(function() {
+$(".tabHospital-list .tabHospital").removeClass("active").eq($(this).index()).addClass("active");
+$(".tabHospital__item").hide().eq($(this).index()).fadeIn()
+}).eq(0).addClass("active");
 
+
+
+
+
+(function() {
+  
+  'use strict';
+
+  $('.input-file').each(function() {
+    var $input = $(this),
+        $label = $input.next('.js-labelFile'),
+        labelVal = $label.html();
+    
+   $input.on('change', function(element) {
+      var fileName = '';
+      if (element.target.value) fileName = element.target.value.split('\\').pop();
+      fileName ? $label.addClass('has-file').find('.js-fileName').html(fileName) : $label.removeClass('has-file').html(labelVal);
+   });
+  });
+
+})();

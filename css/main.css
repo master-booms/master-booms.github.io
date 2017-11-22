@@ -4639,6 +4639,869 @@ input:focus {
   padding: 0 5px;
 }
 
+.banner {
+  background-size: cover !important;
+  background-position: center !important;
+  height: 191px;
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
+  position: relative;
+}
+
+.banner-rait {
+  width: 400px;
+  height: 90px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  position: absolute;
+  z-index: 99;
+  top: 115px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.banner-logo {
+  background-size: cover !important;
+  background-position: center !important;
+  width: 48px;
+  height: 53px;
+  margin-left: 25px;
+}
+
+.banner-stars {
+  margin-left: 25px;
+}
+
+.banner-stars__title {
+  color: #3a393a;
+  font-weight: 400;
+  margin-bottom: 2px;
+}
+
+.banner-stars__stars i {
+  color: #ffd27b;
+  font-size: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.banner-stars__stars span {
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.banner-stars__stars span a {
+  color: #898989;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.banner-stars__stars span a:hover {
+  color: #000;
+}
+
+.tabsHospital {
+  border: 1px solid #f5f5f5;
+  margin-bottom: 50px;
+}
+
+.tabHospital {
+  padding: 15px 15px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tabHospital.active {
+  border-bottom: 4px solid #4285f4;
+}
+
+.hospital-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.hospital-label {
+  display: block;
+  color: #393939;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  top: -30px;
+}
+
+.hospital-search {
+  margin-bottom: 30px;
+}
+
+.hospital-mainRaiting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 1px solid #f5f5f5;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.hospital-mainRaiting .overal-stars {
+  width: 50%;
+  padding: 25px 25px;
+}
+
+.hospital-mainRaiting .overal-ratingW {
+  width: 50%;
+  margin-left: 0;
+  margin-right: 0;
+  border: none;
+  padding: 25px 25px;
+  margin-top: 0;
+  border-left: 1px solid #f5f5f5;
+}
+
+.hospital-mainRaiting .overal-rating__stars {
+  margin-bottom: 5px;
+}
+
+.hospital-left {
+  width: 70%;
+}
+
+.hospital-left .search__input input {
+  padding-left: 15px;
+}
+
+.hospital-btn {
+  border-radius: 6px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.hospital-btn i {
+  font-size: 20px;
+  position: absolute;
+  left: 20px;
+  top: 12px;
+}
+
+.hospital-sidebarItem {
+  border: 1px solid #f5f5f5;
+  background-color: #FFF;
+  border-radius: 6px;
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+.hospital-sidebarItem:last-child {
+  margin-bottom: 0;
+}
+
+.hospital-sidebarItem__title {
+  color: #3a393a;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 660;
+  margin-bottom: 7px;
+}
+
+.hospital-sidebarItem__title--links {
+  margin-bottom: 20px;
+}
+
+.hospital-sidebarItem__text {
+  width: 187px;
+  margin-bottom: 20px;
+  color: #3a393a;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.hospital-sidebarItem__text--last {
+  margin-bottom: 10px;
+}
+
+.hospital-sidebarItem__text a {
+  display: block;
+  color: #346df1;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 300;
+  text-decoration: underline;
+  line-height: .4;
+}
+
+.hospital-sidebarItem__text a:hover {
+  text-decoration: none;
+}
+
+.overal-stars__title {
+  color: #3a393a;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.overal-stars__bold {
+  color: #393939;
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 0;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.overal-stars__stars {
+  margin-bottom: 15px;
+}
+
+.overal-stars__stars i {
+  color: #ffd27b;
+  font-size: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.overal-stars__stars span.overal-stars__reviews {
+  margin-left: 0px;
+  display: block;
+}
+
+.overal-stars__stars span.overal-stars__reviews a {
+  color: #898989;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.overal-stars__stars span.overal-stars__reviews a:hover {
+  color: #000;
+}
+
+.overal-stars__progressbar {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.overal-stars__progressStar {
+  color: #3a393a;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.progress {
+  background-color: #f5f5f5;
+  overflow: hidden;
+  border-radius: 50px;
+  height: 10px;
+  width: 80%;
+}
+
+.progress > span {
+  display: block;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #ffd27b;
+}
+
+.overal-ratingW {
+  border-top: 1px solid #f5f5f5;
+  margin-left: -25px;
+  margin-right: -25px;
+  padding: 25px;
+  margin-top: 25px;
+}
+
+.overal-rating__title {
+  color: #3a393a;
+  font-weight: 300;
+  margin-bottom: 0px;
+}
+
+.overal-rating__bold {
+  color: #393939;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: 0;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.overal-rating__stars {
+  margin-bottom: 15px;
+}
+
+.overal-rating__stars i {
+  color: #ffd27b;
+  font-size: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.overal-rating__stars span.overal-stars__reviews {
+  margin-left: 0px;
+  display: block;
+}
+
+.overal-rating__stars span.overal-stars__reviews a {
+  color: #898989;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.overal-rating__stars span.overal-stars__reviews a:hover {
+  color: #000;
+}
+
+.overal2-rating__title {
+  color: #3a393a;
+  font-weight: 300;
+  margin-bottom: 0px;
+}
+
+.overal2-rating__bold {
+  color: #393939;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 700;
+  margin-left: 0;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  margin-left: 10px;
+  margin-top: 2px;
+}
+
+.overal2-rating__stars p {
+  color: #3a393a;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.overal2-rating__stars i {
+  color: #ffd27b;
+  font-size: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.overal2-rating__stars span.overal-stars__reviews {
+  margin-left: 0px;
+  display: block;
+}
+
+.overal2-rating__stars span.overal-stars__reviews a {
+  color: #898989;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.overal2-rating__stars span.overal-stars__reviews a:hover {
+  color: #000;
+}
+
+.btn-tertiary {
+  color: #3a393a;
+  padding: 0;
+  line-height: 40px;
+  text-align: center;
+  width: 144px;
+  border-radius: 6px;
+  margin: auto;
+  display: block;
+  border: 1px solid #e8e8e8;
+}
+
+.btn-tertiary:hover,
+.btn-tertiary:focus {
+  color: #888888;
+  border-color: #888888;
+}
+
+.input-file {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.input-file + .js-labelFile {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.input-file + .js-labelFile .icon:before {
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.input-file + .js-labelFile.has-file .icon:before {
+  content: "\f00c";
+  color: #5AAC7B;
+}
+
+.hospital-reports__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 70%;
+  margin-bottom: 26px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.hospital-reports__report {
+  padding: 5px 25px;
+  border: 1px solid #e8e8e8;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.hospital-reports__reportLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.hospital-reports__reportLeft .btn {
+  width: 84px;
+  height: 30px;
+  line-height: 28px;
+  text-align: center;
+  color: #3169f5;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 400;
+  border: 1px solid #e8e8e8;
+  background-color: #FFF;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.hospital-reports__reportLeft .btn.active {
+  background-color: #4285f4;
+  color: #fff;
+}
+
+.hospital-reports__reportLeft .btn:hover {
+  background-color: #4285f4;
+  color: #fff;
+}
+
+.hospital-reports__reportLeft p {
+  margin-right: 15px;
+  color: #898989;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.hospital-reports__reportLink {
+  display: inline-block;
+  vertical-align: middle;
+  color: #3169f5;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.hospital-reports__reportLink:hover {
+  text-decoration: none;
+  color: #4285f4;
+}
+
+.hospital-reports__reportLink i {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.hospital-reports__title h3 {
+  color: #3a393a;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.hospital-reports__title p {
+  color: #898989;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.hospital-list {
+  background-color: #fff;
+  border: 1px solid #f5f5f5;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.hospital-list__head {
+  border-bottom: 1px solid #f5f5f5;
+  padding: 25px 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.hospital-list__head p {
+  color: #393939;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.hospital-list__head p:last-child {
+  color: #898989;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.hospital-list__head p span {
+  font-weight: 600;
+}
+
+.hospital-list__gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 25px 45px;
+  padding-top: 35px;
+  padding-bottom: 0;
+}
+
+.hospital-list__galleryItem {
+  width: 23%;
+  margin-bottom: 25px;
+}
+
+.hospital-list__galleryItem a img {
+  width: 100%;
+}
+
+.hospital-list__listing {
+  border-bottom: 1px solid #f5f5f5;
+  padding: 25px;
+}
+
+.hospital-list__points {
+  margin-bottom: 20px;
+}
+
+.hospital-list__point {
+  color: #3a393a;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 22px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.hospital-list__point:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+}
+
+.hospital-list__point--green:before {
+  background-color: #7ed321;
+}
+
+.hospital-list__point--orange {
+  margin-left: 60px;
+}
+
+.hospital-list__point--orange:before {
+  background-color: #f5a623;
+}
+
+.hospital-list__point--blue {
+  margin-left: 60px;
+}
+
+.hospital-list__point--blue:before {
+  background-color: #4a90e2;
+}
+
+.hospital-list__pointTitle {
+  color: #3a393a;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.hospital-list__pointDescr {
+  margin-bottom: 10px;
+}
+
+.hospital-list__pointDescr:last-child {
+  margin-bottom: 0;
+}
+
+.hospital-list__pointText p {
+  color: #898989;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.hospital-list__title {
+  color: #346df1;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.hospital-list__title a {
+  color: #346df1;
+}
+
+.hospital-list__titleW {
+  margin-bottom: 8px;
+}
+
+.hospital-list__titleW p {
+  color: #898989;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.hospital-list__titleW p a {
+  color: #898989;
+}
+
+.hospital-list__titleW p span {
+  font-weight: 600;
+}
+
+.hospital-list__descr p {
+  color: #3a393a;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.4;
+  margin-bottom: 2px;
+}
+
+.hospital-list__descr p span {
+  color: #898989;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.hospital-right {
+  width: 27%;
+  margin-left: 1%;
+}
+
+.comments {
+  padding-bottom: 40px;
+}
+
+.comments__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.comments__block--reply {
+  padding-left: 50px;
+}
+
+.comments__ava {
+  background-size: cover !important;
+  width: 35px !important;
+  height: 35px !important;
+  background-position: center !important;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+
+.comments__nameReply {
+  width: 63px;
+  height: 10px;
+  color: #3a393a;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.comments__nameLink {
+  color: #346df1;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 22px;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.comments__nameLink:hover {
+  color: #346df1;
+}
+
+.comments__date {
+  color: #898989;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.comments__text {
+  max-width: 90%;
+}
+
+.comments__text p {
+  color: #3a393a;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.comments__reply {
+  color: #3a393a;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 22px;
+  display: block;
+}
+
+.comments__reply:hover {
+  color: #3a393a;
+}
+
+.comments__textareaW {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 40px;
+  padding-left: 100px;
+  margin-top: 20px;
+}
+
+.comments__textarea {
+  width: 82%;
+  position: relative;
+}
+
+.comments__textarea textarea {
+  margin-top: 10px;
+  width: 100%;
+  resize: none;
+  height: 40px;
+  border: 1px solid #e8e8e8;
+  border-radius: 6px;
+  padding-left: 15px;
+  padding-top: 10px;
+  outline: none;
+  line-height: 1.2;
+}
+
+.comments__textarea textarea:focus {
+  border: 1px solid #4285f4;
+}
+
+.comments__btn {
+  position: absolute;
+  right: 5px;
+  top: 16px;
+  padding: 3px 25px;
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4651,6 +5514,18 @@ input:focus {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.main {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.main--search {
+  -webkit-box-flex: 0;
+  -ms-flex: 0;
+  flex: 0;
 }
 
 .footer {
@@ -5428,6 +6303,10 @@ input:focus {
     width: 450px;
     min-width: 450px;
   }
+
+  .hospital-list__galleryItem {
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 1280px) {
@@ -5545,6 +6424,15 @@ input:focus {
   .search__button {
     width: 100%;
   }
+
+  .hospital-left .search__input {
+    margin-bottom: 40px;
+  }
+
+  .hospital-list__galleryItem {
+    width: 32%;
+    margin-bottom: 12px;
+  }
 }
 
 @media screen and (max-width: 990px) {
@@ -5568,6 +6456,15 @@ input:focus {
   .aside {
     width: 100%;
     margin-right: 0;
+  }
+
+  .hospital-left {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .hospital-right {
+    width: 100%;
   }
 }
 
@@ -5598,6 +6495,68 @@ input:focus {
 
   .listing-right {
     text-align: left;
+  }
+
+  .overal2-rating__bold {
+    display: block;
+    margin-left: 0;
+  }
+
+  .btn-tertiary {
+    width: 100%;
+  }
+
+  .hospital-reports__row {
+    width: 100%;
+  }
+
+  .hospital-reports__report {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 15px;
+  }
+
+  .hospital-reports__reportLeft {
+    width: 100%;
+  }
+
+  .hospital-reports__reportLeft .btn {
+    width: 100%;
+    margin-bottom: 2px;
+    margin-top: 2px;
+  }
+
+  .hospital-reports__reportRight {
+    width: 100%;
+  }
+
+  .hospital-reports__reportLink {
+    display: block;
+    width: 100%;
+    background-color: #4285f4;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0px;
+    margin-top: 5px;
+  }
+
+  .hospital-list__headLeft {
+    margin-bottom: 15px;
+  }
+
+  .hospital-list__head {
+    display: block;
+    padding: 25px;
+  }
+
+  .hospital-list__gallery {
+    padding: 25px;
+  }
+
+  .hospital-list__galleryItem {
+    width: 49%;
   }
 
   .wrapper-tabs .tab {
@@ -5640,6 +6599,33 @@ input:focus {
   }
 }
 
+@media screen and (max-width: 550px) {
+  .hospital-mainRaiting .overal-stars {
+    width: 100%;
+  }
+
+  .hospital-mainRaiting .overal-ratingW {
+    width: 100%;
+  }
+
+  .comments__textareaW {
+    padding-left: 0;
+  }
+
+  .comments__textarea {
+    width: 100%;
+  }
+
+  .comments__textarea textarea {
+    margin-top: 40px;
+  }
+
+  .comments__btn {
+    position: static;
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 549px) {
   .listing-left__wrapL {
     margin-right: 20px;
@@ -5649,6 +6635,36 @@ input:focus {
   .listing-left__wrapR {
     margin-left: 0;
     width: 300px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .banner-rait {
+    width: 290px;
+  }
+
+  .banner-logo {
+    margin-left: 15px;
+  }
+
+  .banner-stars {
+    margin-left: 15px;
+  }
+
+  .hospital-list__galleryItem {
+    width: 100%;
+  }
+
+  .hospital-list__point {
+    display: block;
+  }
+
+  .hospital-list__point--orange {
+    margin-left: 0;
+  }
+
+  .hospital-list__point--blue {
+    margin-left: 0;
   }
 }
 

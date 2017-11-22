@@ -5483,6 +5483,7 @@ input:focus {
 .comments__textarea {
   width: 82%;
   position: relative;
+  min-width: 82%;
 }
 
 .comments__textarea textarea {

@@ -6057,6 +6057,13 @@ input:focus {
   text-decoration: none;
 }
 
+.ceo-question {
+  color: #393939;
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
 .ceo-radio__item {
   position: relative;
   display: inline-block;
@@ -6099,6 +6106,7 @@ input:focus {
 .rating {
   border: none;
   float: left;
+  margin-top: 7px;
 }
 
 .rating > input {
@@ -6116,6 +6124,10 @@ input:focus {
 .rating > label {
   color: #ffd27b;
   float: right;
+}
+
+.rating > label:hover:before {
+  content: "\f005";
 }
 
 .rating > input:checked ~ label {
@@ -6141,11 +6153,17 @@ input:focus {
 .rating > input:checked + label:hover,
 .rating > input:checked ~ label:hover {
   color: #ffd27b;
+  content: "\f005";
 }
 
 .rating > label:hover ~ input:checked ~ label,
 .rating > input:checked ~ label:hover ~ label {
   color: #ffd27b;
+}
+
+.rating > label:hover ~ input:checked ~ label:before,
+.rating > input:checked ~ label:hover ~ label:before {
+  content: "\f005";
 }
 
 .rating--small label:before {

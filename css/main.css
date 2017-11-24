@@ -5514,6 +5514,644 @@ input:focus {
   padding: 3px 25px;
 }
 
+.profile-form {
+  background-color: #FFF;
+  border: 1px solid #f5f5f5;
+  border-radius: 6px;
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+.profile-form__title {
+  color: #39393a;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.profile-form__list {
+  border-bottom: 1px solid #f5f5f5;
+  padding: 25px;
+}
+
+.profile-form__list:last-child {
+  border: none;
+}
+
+.profile-input__usa {
+  color: #393939;
+  position: absolute;
+  top: 47px;
+  left: 19px;
+  font-size: 12px;
+}
+
+.profile-input__col {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.profile-input__col textarea {
+  width: 100%;
+  border: 1px solid #e8e8e8;
+  border-radius: 6px;
+  color: #393939;
+  padding: 20px;
+  outline: none;
+  resize: none;
+  height: 237px;
+  font-size: 12px;
+}
+
+.profile-input__col input {
+  width: 100%;
+  height: 46px;
+  line-height: 46px;
+  border: 1px solid #e8e8e8;
+  background-color: #ffffff;
+  color: #393939;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 300;
+  border-radius: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.profile-input__col input::-webkit-input-placeholder {
+  color: #bebebe;
+  opacity: 1;
+}
+
+.profile-input__col input:-moz-placeholder {
+  color: #bebebe;
+  opacity: 1;
+}
+
+.profile-input__col input::-moz-placeholder {
+  color: #bebebe;
+  opacity: 1;
+}
+
+.profile-input__col input:-ms-input-placeholder {
+  color: #bebebe;
+  opacity: 1;
+}
+
+.profile-input__col select {
+  width: 100%;
+  height: 46px;
+  line-height: 46px;
+  border: 1px solid #e8e8e8;
+  background-color: #ffffff;
+  color: #393939;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 300;
+  border-radius: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url(../img/shape.png) no-repeat;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-position: 95% center;
+  margin-bottom: 12px;
+}
+
+.profile-input__col label {
+  height: 20px;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: 20px;
+  color: #39393a;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  position: relative;
+}
+
+.profile-input__col label span.label-charact {
+  position: absolute;
+  right: 0;
+  font-size: 12px;
+  color: #bebebe;
+}
+
+.profile-input__required {
+  color: red;
+  position: absolute;
+  top: -3px;
+  margin-left: 4px;
+}
+
+.select-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.select-flex .profile-input__col {
+  width: 49%;
+}
+
+.profile-text {
+  margin-bottom: 20px;
+}
+
+.profile-text--top {
+  margin-top: 30px;
+}
+
+.profile-text p {
+  color: #898989;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+.profile-checkbox__text {
+  color: #393939;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 300;
+  position: relative;
+}
+
+.profile-checkbox__checkbox {
+  color: #393939;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 300;
+  position: relative;
+}
+
+.profile-checkbox__checkbox label {
+  padding-left: 25px;
+}
+
+.profile-checkbox__checkbox input[type=checkbox] {
+  display: none;
+}
+
+.profile-checkbox__checkbox input[type=checkbox] + label:before {
+  font-family: FontAwesome;
+  position: absolute;
+  left: 0;
+  font-size: 20px;
+  color: #f5f5f5;
+}
+
+.profile-checkbox__checkbox input[type=checkbox] + label:before {
+  content: "\f096";
+}
+
+.profile-checkbox__checkbox input[type=checkbox]:checked + label:before {
+  content: "\f046";
+  color: #4285f4;
+}
+
+.profile-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.profile-btn__btn {
+  padding: 10px 35px;
+}
+
+.review-rait {
+  width: 320px;
+  padding-left: 20px;
+}
+
+.review-rait__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.review-rait__row:last-child {
+  margin-bottom: 0;
+}
+
+.review-rait__text {
+  color: #39393a;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 300;
+  margin-right: 15px;
+}
+
+.review-rait__text--bold {
+  font-weight: 600;
+}
+
+.review-rait__text--bold span {
+  color: #c6000e;
+}
+
+.profile-toogle {
+  position: relative;
+  padding-left: 20px;
+  display: block;
+  color: #39393a;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.profile-toogle:hover,
+.profile-toogle:focus,
+.profile-toogle:active {
+  text-decoration: none;
+  color: #393939;
+}
+
+.profile-toogle--active i {
+  color: #4285f4 !important;
+}
+
+.profile-toogle i {
+  color: #cacaca;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+
+.profile-toogle__required {
+  position: absolute;
+  right: 0;
+  color: #c6000e;
+  font-size: 12px;
+}
+
+.profile-banner {
+  background-color: #FFF;
+  border: 1px solid #f5f5f5;
+  border-radius: 6px;
+  max-width: 800px;
+  margin: 50px auto;
+  margin-bottom: -20px;
+  padding: 25px;
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.profile-banner--alignTop {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.profile-banner .banner-logo {
+  margin-right: 15px;
+}
+
+.profile-banner__text {
+  color: #39393a;
+  font-family: "Montserrat";
+  font-size: 14px;
+}
+
+.profile-banner__bold {
+  font-weight: 600;
+}
+
+.profile-banner__smallText {
+  display: block;
+  color: #898989;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.reviews-form__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.reviews-form__textW {
+  margin-bottom: 10px;
+}
+
+.reviews-form__text {
+  color: #39393a;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.reviews-form__text--light {
+  font-weight: 300;
+  color: #898989;
+  margin-top: 10px;
+}
+
+.reviews-form__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.reviews-form__right--relaxed {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.reviews-form__radio {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.reviews-form__radio label {
+  width: 85px;
+  height: 35px;
+  line-height: 33px;
+  border-radius: 6px;
+  display: block;
+  border: 1px solid #e8e8e8;
+  text-align: center;
+  color: #3169f5;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.reviews-form__radio input[type=radio] {
+  display: none;
+}
+
+.reviews-form__radio input[type=radio]:checked + label {
+  border: 1px solid #4285f4;
+  display: block;
+  background-color: #4285f4;
+  color: #fff;
+}
+
+.reviews-form__radio--number label {
+  width: 64px;
+}
+
+.reviews-form__checkbox {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.reviews-form__checkbox label {
+  width: 100px;
+  height: 35px;
+  line-height: 33px;
+  border-radius: 6px;
+  display: block;
+  border: 1px solid #e8e8e8;
+  text-align: center;
+  color: #3169f5;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.reviews-form__checkbox label span.relaxed-visible {
+  display: none;
+}
+
+.reviews-form__checkbox input[type=checkbox] {
+  display: none;
+}
+
+.reviews-form__checkbox input[type=checkbox] + label:before {
+  font-family: FontAwesome;
+  position: absolute;
+  right: 10px;
+  top: 1;
+  font-size: 15px;
+  color: #f5f5f5;
+}
+
+.reviews-form__checkbox input[type=checkbox] + label:before {
+  content: "+";
+  color: #898989;
+}
+
+.reviews-form__checkbox input[type=checkbox]:checked + label:before {
+  content: "-";
+  color: #fff;
+  top: -1px;
+}
+
+.reviews-form__checkbox input[type=checkbox]:checked + label {
+  border: 1px solid #4285f4;
+  display: block;
+  background-color: #4285f4;
+  color: #fff;
+}
+
+.reviews-form__checkbox input[type=checkbox]:checked + label span.relaxed {
+  display: none;
+}
+
+.reviews-form__checkbox input[type=checkbox]:checked + label span.relaxed-visible {
+  display: block;
+}
+
+.reviews-form__checkbox--number {
+  margin-bottom: 10px;
+}
+
+.reviews-form__checkbox--number label {
+  width: 141px;
+  position: relative;
+}
+
+.profile-salaryText {
+  padding-top: 30px;
+  padding-left: 10px;
+  font-size: 12px;
+}
+
+.reviews-description {
+  color: #898989;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 21px;
+  font-weight: 400;
+  padding: 30px 20px;
+}
+
+.reviews-description__ul {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.reviews-description__ul li {
+  font-weight: 300;
+  padding-left: 5px;
+  position: relative;
+}
+
+.reviews-description__ul li:before {
+  content: "-";
+  margin-right: 5px;
+}
+
+.reviews-description__links {
+  margin-top: 10px;
+}
+
+.reviews-description__links a {
+  color: #4285f4;
+  text-decoration: underline;
+}
+
+.reviews-description__links a:hover {
+  color: #4285f4;
+  text-decoration: none;
+}
+
+.ceo-radio__item {
+  position: relative;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.ceo-radio__item label {
+  padding-left: 20px;
+  color: #222524;
+  display: block;
+}
+
+.ceo-radio__item input[type=radio] {
+  display: none;
+}
+
+.ceo-radio__item input[type=radio] + label:before {
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+
+.ceo-radio__item input[type=radio] + label:before {
+  content: "";
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+}
+
+.ceo-radio__item input[type=radio]:checked + label:before {
+  content: "";
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  border: 6px solid #4285f4;
+  background-color: #FFF;
+}
+
+.rating {
+  border: none;
+  float: left;
+}
+
+.rating > input {
+  display: none;
+}
+
+.rating > label:before {
+  margin: 2px;
+  font-size: 40px;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f006";
+}
+
+.rating > label {
+  color: #ffd27b;
+  float: right;
+}
+
+.rating > input:checked ~ label {
+  color: #ffd27b;
+}
+
+.rating > input:checked ~ label:before {
+  content: "\f005";
+}
+
+.rating:not(:checked) > label:hover {
+  color: #ffd27b;
+}
+
+.rating:not(:checked) > label:hover ~ label {
+  color: #ffd27b;
+}
+
+.rating:not(:checked) > label:hover ~ label:before {
+  content: "\f005";
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked ~ label:hover {
+  color: #ffd27b;
+}
+
+.rating > label:hover ~ input:checked ~ label,
+.rating > input:checked ~ label:hover ~ label {
+  color: #ffd27b;
+}
+
+.rating--small label:before {
+  font-size: 17px;
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5557,6 +6195,38 @@ input:focus {
   display: block;
 }
 
+.footer-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.footer-mnu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.footer-mnu__link {
+  display: block;
+  color: #393939;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 300;
+  padding: 2px 10px;
+}
+
+.footer-mnu__link:hover {
+  color: #393939;
+}
+
 .wrapper-tabs .class {
   display: none;
 }
@@ -5592,6 +6262,12 @@ input:focus {
   color: #346df1;
   border: 1px solid #346df1;
   border-bottom: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid #4285f4;
 }
 
 @media (min-width: 768px) {
@@ -6482,6 +7158,26 @@ input:focus {
   .hospital-right {
     width: 100%;
   }
+
+  .profile-input__col label {
+    margin-left: 0;
+  }
+
+  .profile-btn__btn {
+    width: 100%;
+  }
+
+  .reviews-form__text--light {
+    display: none;
+  }
+
+  .reviews-form__radio {
+    margin-bottom: 10px;
+  }
+
+  .reviews-form__checkbox {
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -6595,6 +7291,46 @@ input:focus {
     margin-left: 0;
   }
 
+  .profile-banner {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .profile-banner--alignTop {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .profile-banner__text {
+    margin-bottom: 20px;
+  }
+
+  .profile-banner__text--logo {
+    margin-bottom: 0px;
+    margin-top: 20px;
+    margin-left: 25px;
+  }
+
+  .reviews-form__row--stars {
+    display: block;
+  }
+
+  .reviews-form__right--numbers {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  .reviews-form__checkbox--number label {
+    width: 115px;
+  }
+
+  .rating > label:before {
+    font-size: 18px;
+  }
+
   .wrapper-tabs .tab {
     padding: 0 10px;
   }
@@ -6660,6 +7396,14 @@ input:focus {
     position: static;
     width: 100%;
   }
+
+  .profile-input__required_2row {
+    top: 19px;
+  }
+
+  .profile-checkbox__text {
+    max-width: 250px;
+  }
 }
 
 @media screen and (max-width: 549px) {
@@ -6689,6 +7433,22 @@ input:focus {
 
   .hospital-list__galleryItem {
     width: 100%;
+  }
+
+  .review-rait {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .rating--small label:before {
+    font-size: 12px;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 368px) {
+  .profile-input__col label {
+    font-size: 10px;
   }
 }
 

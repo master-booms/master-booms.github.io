@@ -5757,6 +5757,10 @@ input:focus {
   left: 18px;
 }
 
+.profile-btn__btn--print {
+  margin-right: 0;
+}
+
 .review-rait {
   width: 320px;
   padding-left: 20px;
@@ -6260,7 +6264,7 @@ input:focus {
   font-weight: 300;
   font-size: 13px;
   background-color: #4a4a4a;
-  padding: 5px;
+  padding: 5px 10px;
   border-radius: 6px;
 }
 
@@ -6273,6 +6277,10 @@ input:focus {
   border: 1px solid #4285f4;
   position: relative;
   padding-left: 20px;
+}
+
+.profile__btn:hover {
+  border: 1px solid transparent;
 }
 
 .profile__btn i {
@@ -7430,12 +7438,21 @@ select:focus {
     margin-bottom: 10px;
   }
 
+  .profile__title {
+    text-align: center;
+  }
+
   .profile__left {
     padding-left: 25px;
   }
 
   .profile__right {
     border-left: none;
+  }
+
+  .profile__avatar {
+    margin: 0 auto;
+    margin-top: 20px;
   }
 }
 
@@ -7709,6 +7726,10 @@ select:focus {
     margin-bottom: 5px;
   }
 
+  .profile-btn__btn--download {
+    margin-right: 0;
+  }
+
   .review-rait {
     width: 100%;
     padding-left: 0;
@@ -7801,7 +7822,7 @@ select:focus {
   }
 }
 
-@media screen and (min-width: 990px) and (max-width: 1440px) {
+@media screen and (min-width: 990px) and (max-width: 1280px) {
   .profile__avatar {
     width: 90px;
     height: 90px;

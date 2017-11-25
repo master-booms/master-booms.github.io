@@ -5209,10 +5209,6 @@ input:focus {
   margin-bottom: 20px;
 }
 
-.hospital-list--bottom {
-  border-bottom: none;
-}
-
 .hospital-list--photo {
   padding-bottom: 25px;
 }
@@ -5274,6 +5270,10 @@ input:focus {
 .hospital-list__listing {
   border-bottom: 1px solid #f5f5f5;
   padding: 25px;
+}
+
+.hospital-list__listing--bottom {
+  border-bottom: none;
 }
 
 .hospital-list__listing--paddingNone {

@@ -5209,6 +5209,10 @@ input:focus {
   margin-bottom: 20px;
 }
 
+.hospital-list--bottom {
+  border-bottom: none;
+}
+
 .hospital-list--photo {
   padding-bottom: 25px;
 }
@@ -7416,6 +7420,7 @@ select:focus {
 
   .hospital-right {
     width: 100%;
+    margin-left: 0;
   }
 
   .profile-input__col label {
@@ -7448,6 +7453,7 @@ select:focus {
 
   .profile__right {
     border-left: none;
+    padding-right: 25px;
   }
 
   .profile__avatar {

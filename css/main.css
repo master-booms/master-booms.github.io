@@ -7691,7 +7691,7 @@ select:focus {
   }
 
   .hospital-list__listing--paddingMob {
-    padding: 5px;
+    padding: 15px 5px;
   }
 
   .profile-btn--flex {

@@ -4653,6 +4653,7 @@ input:focus {
   filter: blur(1px);
   position: relative;
   overflow: hidden;
+  margin: -4px;
 }
 
 .banner-rait {

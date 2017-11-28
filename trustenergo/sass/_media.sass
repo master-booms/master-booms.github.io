@@ -1,0 +1,577 @@
+@import "bourbon"
+
+/*==========  Desktop First Method  ==========*/
+
+@media only screen and (max-width : 1400px)
+    /**/
+
+ 
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+     .header__phone
+        display: none
+
+
+
+     .menu 
+        display: none
+        background-color: rgba(63, 81, 181, 0.21)
+        padding: 10px 0
+        padding-left: 23px
+
+        li 
+            display: block
+            float: none
+            text-align: left
+            a 
+                font-size: 14px
+                line-height: 25px
+                text-align: left
+            a.triangle 
+                position: static
+                &:after 
+                    top: 100%
+
+
+
+     .mobile-mnu
+        display: block
+        padding: 0px 15px 
+        background-color: #FFF
+        border-radius: 6px
+        
+        i 
+            font-size: 45px
+            color: $blue-color
+            display: inline-block
+            vertical-align: middle
+        span 
+            display: block
+            float: right
+            color: $grey-color
+            font-size: 25px
+            padding-top: 15px
+
+
+     .catalog
+        &__select 
+            select
+                width: 120px
+        &__input
+            input
+                width: 120px
+                margin-bottom: 5px
+        &__btn
+            .red-btn
+                min-width: 130px
+                font-size: 14px
+        &__link
+            font-size: 12px
+
+        &__tab
+            font-size: 13px
+            text-overflow: ellipsis
+            white-space: nowrap
+            overflow-x: hidden
+
+     .industry-sect
+        &__right 
+            h3
+                font-size: 15px
+                max-height: 48px
+                overflow: hidden
+
+
+     .sort-sect
+        &__list
+            position: relative
+        &__right
+            float: none
+            width: 100%
+            margin-left: 0
+        &__title
+            float: none
+        &__sortBtn
+            position: absolute
+            top: 20px
+            right: 20px
+        &__select
+            margin-left: 0
+            width: 100%
+            float: none
+            padding-left: 0
+            select
+                width: 100%
+                margin-left: 0
+                
+            &.w74
+                width: 100%
+                margin-left: 0
+                select
+                    width: 100%
+        .col-md-8,.col-md-4
+            width: 100%
+            position: static
+
+     .pagination-sect
+            &__selectW
+                margin-left: 0  
+
+
+     .product-descr
+        &__itemRight
+            margin-bottom: 20px
+        &__itemRed
+            margin-bottom: 20px
+        &__table
+            p 
+              padding: 10px 20px
+
+     .news-small
+        &__sortR 
+            p 
+             float: none
+        &__input 
+            float: none
+        &__selectW p 
+            float: none
+
+     .news-full
+        &__sortR
+            margin-bottom: 20px
+
+    
+     .slider-sect__list2
+        padding: 30px
+     .slider-sect__row2 
+        h2,h1
+            line-height: 1.1
+            font-size: 2.8rem
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+    .header__logo
+        margin: 10px auto
+    
+    .header 
+        line-height: 45px
+        padding-top: 10px
+
+
+
+    .about-sect
+      &__btn
+        .white-btn
+          max-width: 100%
+          margin-bottom: 20px
+    .white-btn
+        max-width: 100%
+
+    .red-btn
+        max-width: 100%
+
+    .slider-sect    
+        &__list
+            padding: 20px 20px
+        &__img 
+            display: none
+        &__row 
+            h2,h1
+                font-size: 36px
+                line-height: 35px
+        &__btn
+            margin-bottom: 40px
+
+        &__ul
+            li
+                font-size: 16px
+
+        &__arrowR,
+        &__arrowL
+            display: none
+
+
+
+    .spec-sect 
+        h2,h1 
+            text-align: center
+            margin-top: 10px
+        &__container
+            padding-left: 15px
+            padding-right: 15px
+            padding-top: 15px
+        &__text
+            margin-bottom: 15px
+
+
+    .industry-sect
+
+        
+        &__item 
+            h2,h1
+                text-align: center
+        &__btn
+            margin-bottom: 40px
+        &__right
+            margin-bottom: 40px
+        &__list
+            text-align: center
+            margin-left: 0
+                
+
+
+    .complex-sect 
+        margin-bottom: 0
+        &__bg
+            padding: 20px 0
+        h2,h1
+            text-align: center
+        &__btn
+            margin-bottom: 40px
+        &__right_item
+            margin-bottom: 40px
+        &__right
+            p 
+                max-width: 300px
+                margin: auto
+        .container
+            padding: 0px 30px
+
+
+
+    .catalog
+        &__list
+            padding: 0
+        &__checkbox,
+        &__checkboxAll
+            margin-left: 15px
+
+        &__leftTwo
+            &.border-cat
+                border: none
+
+        &__leftInner
+            margin-left: 0px
+
+        &__leftTwo
+            padding-left: 0px
+            margin-left: 0px
+
+        &__title
+            width: 100%
+            display: block
+            float: none
+        &__select,
+        &__input
+            input
+                margin-left: 0
+            span.catalog__title
+                display: block
+                float: none
+        .catalog__selectW
+            float: none
+            width: 100%
+            margin-left: 0
+            select
+                width: 100%
+            input 
+                width: 100%
+
+        &__right
+            min-height: 100px
+
+        &__rightInner
+            margin-left: 0px
+
+    .pagination-sect
+        &__left
+            text-align: center  
+        &__selectW
+            margin: 10px auto
+            max-width: 220px
+     
+    .contacts-geo
+        &__rightList
+            padding-left: 0
+
+
+    .landing-complex
+        &__item
+            height: 100%
+
+
+    .slider-sect__list2
+        padding-bottom: 0
+
+    .news-sect__bg.news-sect__landingBg
+        h2,h1 
+            font-size: 2.8rem
+
+
+    .landing-gen__circle.cord__right
+        right: 20%
+
+    .landing-gen__circleDescr p
+        font-size: 9px
+        line-height: 1.1
+        text-align: left
+
+    .landing-gen__circleDescr h3
+        font-size: 13px
+        line-height: 1.1
+
+
+
+    
+    .landing-gallery 
+        &__item
+            a 
+                display: block
+                position: relative
+                height: 200px
+                width: 100%
+                background-color: #ccc
+
+                img 
+                    position: absolute
+                    left: 50%
+                    top: 50%
+                    right: 0
+                    max-width: 100%
+                    max-height: 100%
+                    transform: translate(-50%,-50%)
+
+
+    .icon
+      width: 18px
+      height: 18px
+      background: url('../img/landing/pictogram-small.png') no-repeat
+
+    .pulse1
+      width: 28px
+      height: 28px
+      left: 0px
+
+
+    .pulse2
+      width: 28px
+      height: 28px
+      left: -5px
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+    .rtable-section
+        padding: 0
+    .rtableWrap
+        padding-top: 0
+    .rtableWrap p.rtable__help 
+        display: none
+    .rtable th 
+        padding-left: 10px
+        width: 230px
+
+
+    .news-small
+        &__item 
+            margin: 0  auto 30px
+            max-width: 320px
+        &__img 
+            height: 100%
+        &__text 
+            height: 100%
+
+    .container.contant
+        width: 100%
+    
+    .spec-sect
+        &__container
+            background-color: rgba(63, 81, 181, 0.21)
+        &__bottom
+            margin-bottom: 20px
+
+        &__cart
+            max-width: 254px
+            margin: auto
+            margin-bottom: 20px
+    
+    .catalog-full
+
+      &__cart
+            max-width: 100% 
+      &__list
+        &.catalog__rows
+
+          .catalog-full__item
+            width: 100%
+
+          .catalog-full__cart
+            @include clearfix
+            padding-left: 30px
+            padding-right: 30px
+            max-width: 100%
+          h3 
+            float: none
+            margin: 20px auto
+          .spec-sect__link
+            float: none
+            display: flex
+            height: 175px
+            width: inherit
+            margin: 10px auto
+            img 
+              width: auto!important
+              height: auto
+          .catalog-full__charact
+            float: none
+            margin: 20px auto
+            margin-left: 0px
+            padding: 10px 15px
+          .catalog-full__ItemLeft
+            @include clearfix
+            float: none
+          p.price
+            margin: 20px auto
+            white-space: nowrap
+            text-overflow: ellipsis
+            max-width: 250px    
+
+    .landing-gallery 
+        &__item
+            a 
+                display: block
+                position: relative
+                height: 150px
+                width: 100%
+                background-color: #ccc
+
+                img 
+                    position: absolute
+                    left: 50%
+                    top: 50%
+                    right: 0
+                    max-width: 100%
+                    max-height: 100%
+                    transform: translate(-50%,-50%)
+
+
+
+
+
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 650px)
+    .catalog
+        &__tab
+            display: block
+            float: none
+            width: 100%
+            line-height: 30px
+            min-height: 30px
+            &:first-child
+                border-radius: 6px 6px 0 0
+            &:first-child.active
+                border-radius: 6px 6px 0 0
+            &:last-child.active
+                border-radius: 0
+        &__tabs
+            .catalog__tab
+                width: 100%
+
+    .pagination-sect
+        &__link
+            width: 14px 
+            height: 22px    
+            line-height: 22px
+            margin-left: 2px
+            margin-right: 2px
+        &__back,
+        &__next
+            padding:  3px 5px
+            margin-left: 4px
+            margin-right: 4px   
+
+
+
+    .landing-gallery 
+        &__item
+            a 
+                display: block
+                position: relative
+                height: 140px
+                width: 100%
+                background-color: #ccc
+
+                img 
+                    position: absolute
+                    left: 50%
+                    top: 50%
+                    right: 0
+                    max-width: 100%
+                    max-height: 100%
+                    transform: translate(-50%,-50%)
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+    /**/
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 380px)
+    .landing-gallery 
+        &__item
+            a 
+                display: block
+                position: relative
+                height: 100px
+                width: 100%
+                background-color: #ccc
+
+                img 
+                    position: absolute
+                    left: 50%
+                    top: 50%
+                    right: 0
+                    max-width: 100%
+                    max-height: 100%
+                    transform: translate(-50%,-50%)
+
+
+
+
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+    /**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+    /**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+    /**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+    /**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+    /**/
+

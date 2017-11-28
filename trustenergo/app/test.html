@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<!--
+<link rel="stylesheet" type="text/css" href="tmp.css" />
+-->
+<style type="text/css">
+#container > div {
+	display: none;
+}
+#spisok > li {
+	cursor: pointer;
+}
+</style>
+<script type="text/javascript">
+$(document).ready(function (){
+	$('#spisok > li').click(function (){
+		$('#container > div').hide();
+		var i=$(this).data('id');
+		$('#d'+i).fadeIn();
+	});
+});
+</script>
+</head>
+<body>
+<ul id='spisok'>
+	<li data-id='1'><div class='title_komplekt_1'>ссылка_1</div></li>
+	<li data-id='2'><div class='title_komplekt_2'>ссылка_2</div></li>
+	<li data-id='3'><div class='title_komplekt_3'>ссылка_3</div></li>
+</ul>
+<div id='container'>
+	<div id='d1' class="gal1">подключаемый блок 1</div>
+	<div id='d2' class="gal1">подключаемый блок 2</div>
+	<div id='d3' class="gal1">подключаемый блок 3</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,2943 @@
+@import "bourbon"
+@import "vars.sass"
+@import "reset.sass"
+@import "fonts.sass"
+@import "header.sass"
+// @import "app/img/sprite/sprite.sass"
+
+
+ 
+
+//Load Libs SASS
+// @import "app/libs/animate/animate.sass"
+
+*::-webkit-input-placeholder
+  color: #9097a0
+  opacity: 1
+
+*:-moz-placeholder
+  color: #9097a0
+  opacity: 1
+
+
+*::-moz-placeholder
+  color: #9097a0
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #9097a0
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #999999
+body input:required:valid,
+body textarea:required:valid
+  color: #999999
+
+
+
+input, select
+  cursor: pointer
+
+button
+  border: none
+  outline: none
+
+$blue-color: #00235d
+$red-color: #cc0000
+$grey-color: #5e6977
+
+
+a 
+  transition: all .5s
+
+a,
+a:hover
+  text-decoration: none
+ 
+
+
+a:active
+  text-decoration: none
+  color: $blue-color
+
+
+a:focus
+  text-decoration: none
+  color: $blue-color
+
+
+
+
+
+
+h1,h2
+  font-size: 36px
+  font-family: "RobotoCondensedBold"
+  color: $blue-color
+
+
+i.mdi 
+  font-size: 18px
+
+
+.red-btn
+  min-width: 163px
+  width: 100%
+  max-width: 172px
+  height: 42px
+  line-height: 42px
+  color: #ffffff
+  font-family: "RobotoMedium"
+  font-size: 16px
+  font-weight: 500
+  background-color: $red-color
+  border-radius: 6px
+  text-align: center
+  display: inline-block
+
+
+.white-btn 
+  min-width: 163px
+  max-width: 172px
+  width: 100%
+  height: 42px
+  line-height: 42px
+  color: $red-color
+  font-family: "RobotoMedium"
+  font-size: 16px
+  font-weight: 500
+  background-color: #ffffff
+  border-radius: 6px
+  text-align: center
+  display: inline-block
+
+
+.header-btn
+  width: 100%
+  height: 30px
+  line-height: 32px
+  background-color: white
+  border-radius: 15px
+  color: #9097a0
+  font-size: 14px
+  font-weight: 400
+  text-align: center
+  display: inline-block
+  position: relative
+  padding-left: 15px
+  &.w187
+    min-width: 187px
+
+  i.mdi-email,
+  i.mdi-phone
+    position: absolute
+    left: 17px
+    top: 0px
+    
+
+.red-btn,
+.header-btn,
+.white-btn
+  &:hover
+    background-color: $blue-color
+    color: #fff
+    text-decoration: none
+
+
+.center 
+  text-align: center
+
+.pull-right
+  float: right
+
+.pull-left
+  float: left
+
+img
+  width: 100%
+  height: auto
+
+
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+
+.header
+  padding-top: 45px
+  min-height: 72px
+  line-height: 72px
+  margin-bottom: 30px
+
+
+  &__logo
+    max-width: 160px
+
+
+  &__search
+    position: relative
+
+    input
+      width: 100%
+      height: 30px
+      line-height: 29px
+      background-color: white
+      border-radius: 15px
+      border: 2px solid transparent
+      outline: none
+      padding-left: 15px
+      padding-right: 45px
+      font-size: 14px
+      color: #9097a0
+      transition: all .5s
+      &:hover,&:focus
+        border: 2px solid $blue-color
+        color: $blue-color
+      &:hover,&:focus ~ button i 
+        color: $blue-color
+
+
+    button
+      position: absolute
+      border: none
+      background: none
+      right: 7px
+      top: 0px
+      i 
+        font-size: 18px
+
+
+  &__phone
+    color: #9097a0
+    font-family: "RobotoMedium"
+    font-size: 33px
+    font-weight: 500
+    float: right
+    margin-right: 11px
+    a 
+      color: inherit
+
+
+.nav 
+  @include clearfix
+  margin-bottom: 20px
+.menu
+  @include clearfix
+  padding-left: 53px
+  text-align: center
+  position: relative
+  display: flex
+  justify-content: space-between
+  li 
+    float: left
+    margin-right: 25px
+    a.triangle
+      position: relative
+      &.active 
+          &:after 
+            display: block      
+
+      &:after 
+        content: ""
+        position: absolute
+        top: 139%
+        left: 50%
+        transform: translateX(-50%)
+        z-index: 999
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 8px 9px 0 9px;
+        border-color: #cc0000 transparent transparent transparent; 
+        display: none
+       
+
+    
+    .sub-menu
+      position: absolute
+      top: 100%
+      left: 0
+      border-top: 3px solid $red-color
+      width: 100%
+      border-radius: 0 0 6px 6px
+      overflow: hidden
+      z-index: 990
+      display: none
+
+      
+      @include clearfix
+      background-color: #FFF
+
+      &__row
+        padding: 15px 40px
+
+      &__item
+        float: none
+        margin: 0
+        text-align: left
+        &:last-child 
+          float: right
+          text-align: left
+        &_block
+
+        &:last-child 
+          float: none
+          text-align: left          
+        a 
+          font-size: 14px
+
+        ul.list-menu 
+          @include clearfix
+          padding: 0px 0  7px
+
+          li 
+            float: left
+            width: inherit
+            margin-right: 8px
+            a
+              color: #00235d;
+              font-family: "RobotoRegular";
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 21px;
+              text-decoration: underline;
+              text-transform: none;
+              &:hover
+                text-decoration: none 
+                color: $blue-color 
+          &_block
+            li 
+              float: none            
+              
+
+      &__bottom
+        min-height: 83px
+        background-color: $red-color
+        color: #fff 
+        text-align: left
+        padding: 15px 40px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        &_height
+          min-height: 40px
+
+
+
+        h3 
+          font-size: 14px
+          font-family: "RobotoCondensedBold"
+          text-transform: uppercase
+
+      &__bottomLink
+          float: left
+          display: block
+          margin-right: 8px
+          text-transform: none
+          text-decoration: underline
+          color: #fff
+          font-size: 14px
+          font-family: "RobotoRegular"
+          &:hover
+            text-decoration: none
+
+    a 
+      color: #003385
+      font-family: "RobotoCondensedBold"
+      font-size: 18px
+      font-weight: 700
+      text-transform: uppercase
+      line-height: 40px
+
+
+.mobile-mnu 
+  display: none
+
+
+.contant
+  flex: 1;
+
+.footer 
+  background-color: #FFF
+  margin-top: 20px
+  &__copyright
+    padding-top: 25px
+    padding-bottom: 25px
+    border-top: 1px solid #e1e8ee
+    a 
+      color: #bdc6cf
+      text-transform: uppercase
+      &:hover
+          color: $blue-color
+          text-transform: none
+  &__mnu 
+    padding-top: 25px
+    padding-bottom: 25px
+    h3
+      color: #00235d;
+      font-family: "RobotoCondensedBold";
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 35px;
+      text-transform: uppercase;
+  &__list
+    padding-top: 10px
+    padding-bottom: 25px
+    li 
+      a 
+        color: #5e6977
+        padding: 7px 0
+        display: block
+        &:hover
+          color: $red-color       
+  &__soc
+    margin-top: 8px
+    margin-left: -8px
+    
+    a 
+      display: inline-block
+      margin-right: 15px
+      i 
+        color: #dee2e7
+        font-size: 24px
+        &:hover
+          color: $blue-color
+
+
+
+
+
+
+
+.slider-sect
+  margin-bottom: 30px
+
+  .owl-dots
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    bottom: 20px
+  .owl-dot
+    width: 10px
+    height: 10px
+    border: 1px solid #86939e
+    border-radius: 50%
+    display: inline-block
+    margin-left: 5px
+    margin-right: 5px
+    &.active
+      background-color: #00235d
+      border: 1px solid transparent
+  
+  .container
+    position: relative
+  &__arrowL
+    position: absolute
+    left: 35px
+    top: 50%
+    transform: translateY(-50%)
+    z-index: 9
+    background: url(../img/slider/left-icon.png) no-repeat
+    width: 21px
+    height: 41px
+    cursor: pointer
+    &:hover
+      opacity: 0.6
+
+  &__arrowR
+    position: absolute
+    right: 35px
+    top: 50%
+    transform: translateY(-50%)
+    z-index: 9
+    background: url(../img/slider/right-icon.png) no-repeat
+    width: 21px
+    height: 41px
+    cursor: pointer
+    &:hover
+      opacity: 0.6
+
+
+
+
+  &__list,
+  &__list2
+    background-color: #FFF
+    padding: 50px 70px
+    border-radius: 6px;
+    box-shadow: 1.5px 2.6px 3px rgba(0, 0, 0, 0.1);
+
+  &__list2
+    background: url("../img/landing/landing-bannerBg.png")
+    background-size: cover
+    background-position: center
+
+
+  &__row
+    p 
+      color: #f20000
+      font-size: 12px
+      font-family: "RobotoBlack"
+      font-weight: 900
+      line-height: 18px
+      text-transform: uppercase
+      margin-bottom: 20px
+    h2,h1 
+      font-size: 58px
+      line-height: 50px
+      margin-bottom: 20px
+
+  &__row2
+    p 
+      color: #f20000
+      font-size: 12px
+      font-family: "RobotoBlack"
+      font-weight: 900
+      line-height: 18px
+      text-transform: uppercase
+      margin-bottom: 20px
+      letter-spacing: 2px
+    h2,h1 
+      font-size: 58px
+      line-height: 50px
+      margin-bottom: 20px
+
+
+  &__ul
+    margin-bottom: 50px
+    
+    li 
+      margin-bottom: 15px
+      font-size: 18px
+      position: relative
+      padding-left: 35px
+      i 
+        position: absolute
+        left: 0
+        font-size: 24px
+        color: $red-color
+
+  &__ul2
+    margin-bottom: 50px
+    
+    li 
+      margin-bottom: 15px
+      font-size: 18px
+      position: relative
+      padding-left: 35px
+      color: #fff
+      i 
+        position: absolute
+        left: 0
+        font-size: 24px
+        color: $red-color
+
+.catalog
+  margin-bottom: 30px
+
+  &--product
+    h2,h1 
+      margin-bottom: 20px
+      font-size: 30px
+      line-height: 28px
+
+  &__list
+    @extend .slider-sect__list
+    padding: 0
+  &__tabs
+    @include clearfix
+    &--product
+      .catalog__tab
+        width: 20%
+        padding: 0
+  &__tabContent
+
+    padding: 30px 30px 15px 30px
+    &--product
+      padding: 0
+  &__tab
+    color: #5e6977
+    background-color: #fdfefe
+    font-size: 18px
+    font-weight: 400
+    line-height: 60px
+    padding: 0 16.5px
+    display: block
+    float: left
+    text-align: center
+    min-height: 60px
+    cursor: pointer
+    border: 1px solid rgba(225, 232, 238, 0.6)
+    border-right: none
+    border-top: none
+    &:first-child
+      border-left: none
+      border-radius: 6px 0 0 0
+
+    &:last-child
+      border-radius: 0 6px 0 0
+
+    &.active
+      color: #fff 
+      background: $blue-color
+
+  &__tabItem
+
+    
+  &__left
+    
+    padding-top: 10px
+    &.border-cat
+      border-right: 1px solid #e1e8ee    
+  &__leftTwo
+    padding-left: 25px
+
+    &_stab
+      padding-top: 40px
+
+    
+  &__select
+    position: relative
+    overflow-x: hidden
+    margin-bottom: 10px
+    &.block-hidden
+      display: none
+      &.block-show
+        display: block  
+    &.block-off
+      &.block-hidden
+        display: none
+
+    span.catalog__title
+      display: block
+      float: left
+      width: 117px
+      margin-top: 10px
+      line-height: 15px
+
+    select
+      width: 190px
+      height: 42px
+      display: block
+      vertical-align: middle
+      background-color: #f0f4f7
+      border-radius: 6px
+      outline: none
+      border: none
+      appearance: none
+      padding-left: 20px
+      padding-right: 20px
+      color: #5e6977
+
+
+  &__input
+
+    overflow-x: hidden
+    margin-bottom: 10px
+    &.block-hidden
+      display: none
+      &.block-show
+        display: block
+
+
+
+    span.catalog__title
+      display: block
+      float: left
+      width: 117px
+      margin-top: 10px
+      line-height: 15px
+    input
+      width: 90px
+      height: 42px
+      border: 2px solid #e1e8ee
+      margin-left: 2px
+      margin-right: 2px
+      border-radius: 6px
+      padding-left: 20px
+      padding-right: 5px
+      float: left
+      margin-left: 6px
+      outline: none
+  &__right
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    min-height: 205px
+  &__text
+      overflow: hidden
+      margin-bottom: 17px 
+      line-height: 18px 
+      font-size: 13px 
+      &.block-hidden
+        display: none
+        &.block-show
+          display: block
+
+  &__rightInner
+    margin-left: -5px
+    
+  &__btn
+    margin-bottom: 20px
+    &-right
+      float: right
+      margin-right: 43px
+
+      .red-btn
+        min-width: 186px
+    &.pt40
+      padding-top: 40px        
+
+    &_height
+      display: flex
+      min-height: 139px
+      flex-direction: column
+      justify-content: flex-end
+
+    i 
+      float: right
+      margin-right: 15px
+
+  &__title
+    color: #00235d
+    font-family: "RobotoCondensedBold"
+    font-size: 12px
+    font-weight: 700
+    line-height: 21px
+    text-transform: uppercase
+    margin-bottom: 20px
+  &__link
+    color: $red-color
+    font-size: 14px
+    font-weight: 400
+    line-height: 21px
+    text-decoration: underline
+    .text-hidden
+      display: none
+      &.text-active
+        display: inline
+    .text-show
+      display: inline
+      &.text-hidden
+        display: none
+
+  &__all  
+    height: 200px
+    overflow-y: scroll
+    margin-left: -23px
+    padding-left: 23px
+    overflow-x: hidden
+    &.block-hidden
+      display: none
+      &.block-show
+        display: block
+
+    &_Stab
+      height: 90px
+      overflow-y: scroll
+      margin-left: -23px
+      padding-left: 23px
+      overflow-x: hidden      
+  &__popular
+    &.block-hidden
+      display: none
+      &.block-show
+        display: block
+
+  &__selectW
+      position: relative
+      float: left
+      margin-left: 6px
+      overflow: hidden    
+
+
+
+
+  &__checkboxW
+    padding-left: 15px
+    margin-bottom: 15px
+  &__checkbox
+    margin-left: -13%
+    font-size: 14px
+    line-height: 15px
+    margin-bottom: 15px
+    a 
+      color: inherit
+    label
+      display: inline-block
+      width: 93%
+      margin-left: 25px
+      position: relative
+      color: #5e6977
+      font-size: 14px
+      cursor: pointer
+
+      
+
+    input[type=checkbox]  
+      display: none /* to hide the checkbox itself */
+      cursor: pointer
+    input[type=checkbox] + label:before
+      font-family: "Material"
+      color: #86939e;
+      font-size: 18px
+      position: absolute
+      left: -25px
+
+    input[type=checkbox] + label:before  
+      content: "\F131"/* unchecked icon */
+
+
+
+    input[type=checkbox]:checked + label:before 
+      content: "\F132" /* checked icon */
+ 
+
+  &__checkboxAll
+      margin-left: -13%
+      font-size: 14px
+      line-height: 15px
+      margin-bottom: 15px
+      a 
+        color: inherit
+      label
+        display: inline-block
+        width: 93%
+        margin-left: 25px
+        position: relative
+        color: #5e6977
+        font-size: 14px
+        cursor: pointer
+
+        
+
+      input[type=checkbox]  
+        display: none /* to hide the checkbox itself */
+      input[type=checkbox] + label:before
+        font-family: "Material"
+        color: #86939e;
+        font-size: 18px
+        position: absolute
+        left: -25px
+
+
+      input[type=checkbox] + label:before  
+        content: "\F137"/* unchecked icon */
+
+
+
+      input[type=checkbox]:checked + label:before 
+        content: "\F138" /* checked icon */
+
+
+    
+      
+
+
+
+
+
+.industry-sect
+  color: #fff
+  margin-bottom: 30px
+  &__bg
+    background: #000 url(../img/bg/industry-sect-bg.png) no-repeat
+    min-height: 380px
+    background-size: cover
+    padding: 35px 40px
+    border-radius: 6px
+    overflow: hidden
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1)
+
+  &__item
+    h2,h1 
+      color: #fff
+      line-height: 35px
+      margin-bottom: 30px
+    p 
+      font-size: 16px
+      margin-bottom: 30px
+
+  &__right
+ 
+    h3 
+      font-size: 16px
+      font-family: "RobotoCondensedBold"
+      text-transform: uppercase
+      color: #fff
+      max-width: 200px
+      text-align: center
+      margin: auto
+      margin-bottom: 10px
+      transition: all .5s
+
+  &__img
+    
+    height: 150px
+    margin-bottom: 15px
+    display: flex
+    img 
+      width: auto
+      max-height: 100%
+      height: auto
+      margin: auto
+
+
+  &__list
+    margin-left: 27px
+    a 
+      display: block
+      color: #fff 
+      text-decoration: underline
+      line-height: 18px
+      margin-bottom: 7px
+      transition: all .5s
+      &:hover
+        text-decoration: none
+  &__btn
+    i 
+      float: right
+      margin-right: 15px
+
+
+
+
+
+
+
+
+
+
+
+
+.complex-sect
+  background-color: #FFF
+  margin-bottom: 50px
+  h2,h1 
+    margin-bottom: 40px
+    margin-top: 30px
+    line-height: 35px
+
+  .container
+    padding: 50px
+    padding-left: 50px
+
+  &__right_icon 
+      margin-bottom: 15px
+      img
+        width: inherit
+        
+      &.first-icon
+        img 
+          transition: all 3s
+
+      &.second-icon
+        img 
+          transition: all 1s
+
+  
+  &__right
+    text-align: center
+
+
+    &_item
+      margin-bottom: 15px
+      cursor: pointer
+      
+
+
+        
+
+
+    h3 
+      font-size: 16px
+      font-family: "RobotoCondensedBold"
+      text-transform: uppercase
+      color: $red-color
+      margin-bottom: 20px
+      transition: all .5s
+    p 
+      line-height: 19px
+
+
+  &__btn
+      i 
+        float: right
+        margin-right: 15px
+
+
+
+
+
+.complex-sect__right_item:hover .first-icon > img
+  transform: rotate(360deg)
+
+
+
+.complex-sect__right_item:hover .second-icon > img
+  transform: scale(1.1)
+  transition: all 1s
+
+
+
+
+
+
+.spec-sect
+  margin-bottom: 30px
+
+
+
+  &__container
+    padding-left: 50px
+  &__bottom
+    @include clearfix
+  &__arrows
+    margin-right: 11px  
+  &__arrowL,
+  &__arrowR
+    width: 45px
+    height: 45px
+    border: 1px solid rgba(94, 105, 119, 0.3);
+    border-radius: 6px
+    line-height: 45px
+    text-align: center
+    display: inline-block
+    color: #5e6977;
+    margin-left: 5px
+    cursor: pointer
+    &:hover
+      color: #fff 
+      background: $blue-color
+
+  h2,h1 
+    margin-bottom: 20px
+    line-height: 35px
+
+  &__cart
+    background-color: #fff
+    padding: 15px 10px
+    padding-bottom: 0
+    border-radius: 6px
+    box-shadow: 1.5px 2.6px 3px rgba(0, 0, 0, 0.1)
+    margin-bottom: 15px
+    display: block
+    color: inherit
+    border: 1px solid transparent
+    position: relative
+    max-width: 253px
+
+
+    &:hover
+      box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1)
+      // box-shadow: 0px 3px 26px 0px rgba(0, 0, 0, 0.2)
+      h3 
+        color: $red-color
+    h3 
+      color: $blue-color
+      font-family: "RobotoBold"
+      text-align: center
+      max-width: 200px
+      margin: 0 auto
+      margin-bottom: 10px
+      font-size: 14px
+      line-height: 20px
+      max-height: 60px
+      overflow: hidden
+      a 
+          color: inherit
+  p.price
+    font-size: 13px
+    padding: 15px 0
+    border-top: 1px solid #e1e8ee
+    text-align: center
+    max-height: 60px
+    overflow: hidden
+    span.price_trough
+      text-decoration: line-through
+      display: inline-block
+      font-size: 16px
+      margin-left: 5px
+      margin-right: 5px
+    span.price_bold
+      font-family: "RobotoBold"
+      margin-left: 5px
+      margin-right: 5px
+      font-size: 16px
+
+
+  &__link 
+    display: flex
+    text-align: center
+    margin-bottom: 10px
+    height: 175px
+    img 
+      width: auto!important
+      margin: auto
+
+  &__btn
+    i 
+      margin-right: 15px
+      float: right
+
+  &__timer
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    right: -15px
+    color: #fff 
+    background-color: $red-color
+    width: 36px
+    min-height: 120px
+    display: flex;
+    flex-direction: column
+    justify-content: space-between
+    z-index: 999
+    &:after
+      content: ""
+      position: absolute
+      top: -8px
+      right: 0
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 8px 0 0 15px
+      border-color: transparent transparent transparent #ad0000
+
+    p 
+      line-height: 13px
+      font-family: "RobotoCondensedBold"
+      font-size: 16px
+      font-weight: 700
+      text-align: center
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3)
+      padding-bottom: 6px
+      padding-top: 6px
+      &:last-child
+        border-bottom: none
+      
+      span.spec-sect__timerMin
+        text-transform: uppercase
+        font-size: 10px
+        display: block
+
+
+
+
+
+
+
+
+
+
+
+.news-sect
+  color: #fff
+  margin-bottom: 30px
+  &__bg
+    background: #000 url(../img/bg/news-sect-bg.png) no-repeat
+    min-height: 350px
+    background-size: cover
+    padding: 35px 40px
+    overflow: hidden
+    border-radius: 6px
+    box-shadow: 1.5px 2.6px 3px rgba(0, 0, 0, 0.1)
+  h2,h1 
+    color: #fff
+    margin-bottom: 20px
+
+  &__date
+    font-family: "RobotoBlack"
+    font-size: 12px
+    margin-bottom: 12px
+
+  h3 
+    font-family: "RobotoBold"
+    text-transform: uppercase
+    margin-bottom: 18px
+
+  p 
+    line-height: 22px
+    font-family: "RobotoLight"
+    margin-bottom: 10px
+
+  &__btn
+    margin-top: 10px
+    .white-btn
+      color: $red-color
+      &:hover
+        text-decoration: none
+        color: #fff
+      i 
+        margin-right: 15px
+        float: right
+
+  a 
+    color: inherit
+    &:hover
+      text-decoration: underline
+
+
+
+
+
+
+
+
+
+
+
+.about-sect
+  margin-bottom: 30px
+
+  h2,h1 
+    margin-bottom: 26px
+    line-height: 1.1
+  p 
+    line-height: 22px
+    margin-bottom: 10px
+
+  &__right
+    max-height: 130px
+    overflow: hidden
+    &.active-height
+      max-height: 100%
+    &.h159
+      max-height: 159px
+      &.active-height
+        max-height: 100%
+  &__left
+    text-align: center
+    padding-top: 15px
+    margin-right: 10px
+    &.text-left
+      text-align: left
+      h2,h1 
+        max-width: 150px
+  &__btn
+    .white-btn
+      max-width: 172px
+      margin-bottom: 20px
+
+      i 
+        margin-right: 15px
+        float: right
+      .text-hidden
+        display: none
+        &.text-active
+          display: inline
+      .text-show
+        display: inline
+        &.text-hidden
+          display: none
+
+    .active-btn
+      i 
+        transform: rotate(-180deg)
+
+   
+
+.nicescroll-rails
+    border-radius: 4px
+
+
+
+
+
+/* ==========================================================================
+   Page Catalog
+   ========================================================================== */
+
+
+.sort-sect
+    margin-bottom: 30px 
+    &__sortBtn
+        float: right  
+        padding-top: 6px  
+
+        a 
+            display: inline-block 
+            vertical-align: middle
+            color: #86939e
+            &.active
+              color: $red-color  
+            i 
+                font-size: 30px
+                color: inherit 
+            i.mdi-view-module
+                font-size: 32px
+    &__list 
+        @extend .slider-sect__list
+        padding: 20px  25px
+    &__right
+        @include clearfix
+        float: left
+        width: 84%
+        margin-left: 50px    
+    &__select
+        display: block  
+        margin-left: 10px 
+        margin-right: 10px  
+        float: left
+        width: 54%
+        overflow: hidden
+        padding-left: 20px  
+        &.w74
+            width: 33.5% 
+            margin-left: 44px
+            padding-left: 0
+            select
+                width: 74px 
+
+    &__selectW
+        position: relative
+        @include clearfix
+         
+        // &:after
+        //   content: "\F35D"
+        //   position: absolute
+        //   font-family: "Material"
+        //   right: 20px
+        //   top: 10px
+        //   font-size: 25px
+        //   cursor: pointer         
+        select
+          width: 184px
+          height: 42px
+          border: 2px solid #e1e8ee
+          border-radius: 6px
+          padding-left: 20px
+          appearance: none
+          outline: none  
+    &__title
+        color: #5e6977
+        float: left 
+        margin-right: 10px 
+        line-height: 42px
+    
+
+    &__breadcrumbs
+        line-height: 42px 
+        i 
+          color: #bdc6cf
+          font-size: 16px 
+          margin-left: 2px
+          margin-right: 2px 
+          display: inline-block 
+          vertical-align: middle    
+        a
+          color: #5e6977
+          &:hover
+              color: $blue-color
+          &:first-child
+              color: #86939e 
+
+              &:hover
+                  color: $blue-color
+
+
+
+
+
+.catalog-full
+  margin-bottom: 20px
+  &__cart
+    @extend .spec-sect__cart
+    max-width: 100%
+    transition: none
+    .spec-sect__link
+        transition: none
+
+
+    h3 
+      max-height: 40px
+      overflow-x: hidden
+      a 
+          color: inherit
+          transition: none
+  &__bar
+    min-height: 70px
+    right: -15px  
+    a 
+        display: inline
+        background-color: none
+        padding: 0  
+        border-radius: none
+        box-shadow: none
+        color: #fff 
+        border: none
+        margin: 0 
+        width: 0  
+        max-width: 0
+        transition: none    
+    p 
+      padding-bottom: 9px
+      padding-top: 9px
+
+
+      i 
+        display: inline-block
+      &:hover
+        i 
+          transform: scale(1.1)
+
+
+  &__list
+
+    
+    &.catalog__column
+      opacity: 0
+
+    &.catalog__rows
+      &.catalog__opacity
+        transition: all 3s
+        opacity: 0
+
+      .catalog-full__item
+        width: 100%
+
+      .catalog-full__cart
+        @include clearfix
+        padding-right: 30px 
+        padding-left: 30px  
+      h3 
+        float: right
+        margin: 20px auto
+      .spec-sect__link
+        float: left
+        display: block
+        height: 80px
+        width: 80px
+        transition: none
+        img 
+          width: 100%!important
+          height: auto
+      .catalog-full__bar
+          a 
+              padding: 0  
+      .catalog-full__charact
+        float: left
+        margin: 20px auto
+        margin-left: 150px
+        padding: 10px 15px
+      .catalog-full__ItemLeft
+        @include clearfix
+        float: left
+      p.price
+        margin: 20px auto
+        white-space: nowrap
+        text-overflow: ellipsis
+        max-width: 250px
+          
+  &__charact
+    background-color: $blue-color
+    padding: 10px 8px
+    color: #fff
+    border-radius: 4px
+    text-align: center  
+  &__charactLine
+    display: inline-block
+    vertical-align: middle
+    margin-left: 3px
+    margin-right: 2px
+    padding-top: 2px
+    color: #3c557d
+  &__charactItem
+    display: inline-block
+    vertical-align: middle
+    line-height: 15px
+    color: #fffefe
+    &.fz14 
+      font-family: "RobotoBold"
+    &.fz13
+      font-size: 13px
+      font-family: "RobotoLight"
+    &.fz11
+      font-size: 11px
+      line-height: 12px
+      font-family: "RobotoLight"
+    span
+      display: block
+  
+  p.price
+    font-size: 13px
+    padding: 15px 0
+    text-align: center
+    max-height: 40px
+    margin-bottom: 10px
+    overflow: hidden
+    span.price_trough
+      text-decoration: line-through
+      display: inline-block
+      font-size: 16px
+      margin-left: 5px
+      margin-right: 5px
+    span.price_bold
+      font-family: "RobotoBold"
+      margin-left: 5px
+      margin-right: 5px
+      font-size: 16px
+
+
+
+.pagination-sect
+  margin-bottom: 30px
+  &__list
+    @extend .sort-sect__list
+  &__left
+    p 
+      color: #86939e
+      display: inline-block 
+      line-height: 42px 
+  &__center
+    text-align: center
+
+  &__link
+    width: 34px
+    height: 42px
+    display: inline-block
+    vertical-align: middle
+    line-height: 42px
+    background-color: rgba(235 , 237, 238, 0.5)
+    border-radius: 4px
+    color: #41413f
+    text-align: center
+    font-size: 18px
+    margin-left: 4px
+    margin-right: 4px
+    &:hover,
+    &.active
+        color: #fff 
+        background-color: #aab3bb
+
+
+  &__back,
+  &__next
+    background-color: $blue-color
+    display: inline-block
+    vertical-align: middle
+    color: #fff
+    padding: 9px 15px
+    border-radius: 4px
+    margin-left: 7px
+    margin-right: 7px 
+    &:hover
+        color: #fff 
+        background-color: #aab3bb    
+
+
+  &__select
+      display: block   
+      float: left
+      width: 75px
+      padding-left: 20px
+      position: relative
+       
+
+  
+  &__selectW
+      @include clearfix
+      margin-left: 35px 
+       
+        
+      select
+        width: 75px
+        height: 42px
+        border: 2px solid #e1e8ee
+        border-radius: 6px
+        padding-left: 20px
+        appearance: none
+        outline: none  
+  &__title
+      color: #5e6977
+      float: left 
+      margin-right: 10px 
+      line-height: 42px
+
+
+
+
+
+/* ==========================================================================
+   Page Product
+   ========================================================================== */
+
+.product-descr
+  
+  h2,h1 
+    margin-bottom: 20px
+    font-size: 30px
+    line-height: 28px
+
+  &__itemLeft
+    @extend .sort-sect__list
+    margin-bottom: 20px
+    padding: 30px 30px 10px
+   
+  &__gallery
+    margin-bottom: 20px
+    ul 
+      margin-left: 15px
+  &__logo
+    max-width: 150px
+    margin: 0px auto 30px
+  &__slider
+    margin-bottom: 10px
+    overflow: hidden
+    a 
+      display: block
+      text-align: center
+      outline: none
+    img 
+      max-width: 240px
+      margin: 0  auto 10px
+  &__thumb
+    overflow: hidden
+    margin-bottom: 20px
+    margin-top: 5px
+    display: flex
+    justify-content: space-between
+    a 
+      display: block
+      margin-bottom: 5px
+      
+      width: 55px
+      height: 47px
+      margin-left: 3px
+      margin-right: 3px
+      border: 2px solid #d6d6d6
+      border-radius: 4px
+      img 
+        width: 48px
+        height: 43px
+      &.active
+        border: 2px solid $red-color
+
+
+
+
+  &__text 
+    p 
+      color: #86939e
+      font-family: "RobotoMedium"
+      line-height: 20px
+      margin-bottom: 20px
+      &:last-child
+        margin-bottom: 0
+    ul 
+      margin-left: 25px
+      li 
+        margin-bottom: 20px
+        position: relative
+        padding-left: 40px
+        line-height: 20px
+        i 
+          position: absolute
+          left: 0px
+          color: $red-color
+          font-size: 24px
+  &__table
+    p 
+      padding: 13px 40px
+      background-color: #FFF
+      display: flex
+      justify-content: space-around
+
+      span
+        display: block
+        width: 50%
+        line-height: 13px
+      &:nth-child(2n)
+        background-color: #f7f7f7
+
+  &__itemRight
+    @extend .sort-sect__list
+    padding: 33px 20px
+    margin-bottom: 37px
+    color: $blue-color
+
+  &__itemText
+      font-size: 16px
+      font-family: "RobotoCondensedBold"
+      text-align: center
+      text-transform: uppercase
+      margin-bottom: 25px
+
+  &__itemList
+    li 
+      margin-bottom: 15px
+      &:last-child
+        margin-bottom: 0      
+      a 
+        position: relative
+        color: $blue-color
+        padding-left: 30px
+        display: block
+        line-height: 18px
+        &:hover
+          text-decoration: underline
+        i 
+          position: absolute
+          left: -8px
+          top: -3px
+          font-size: 24px
+          color: #86939e
+    
+  &__itemRed
+    @extend .sort-sect__list
+    color: #fff 
+    background-color: $red-color
+    margin-bottom: 37px
+    padding-bottom: 30px
+
+  &__itemRedText
+      font-size: 16px
+      font-family: "RobotoCondensedBold"
+      text-align: center
+      text-transform: uppercase
+      margin-bottom: 25px
+
+  &__itemRedList
+    li 
+      margin-bottom: 25px
+
+      &:last-child
+        margin-bottom: 0
+      a 
+        position: relative
+        color: #fff
+        padding-left: 30px
+        display: block
+        line-height: 18px
+        font-family: "RobotoBold"
+        transition: all 0.3s
+        &:hover
+            transform: scale(1.1)
+
+
+        i 
+          position: absolute
+          left: -8px
+          top: -2px
+          font-size: 24px
+          color: #fff
+  &__itemRedLink
+    &_phone
+      font-size: 24px
+
+
+    &_email
+      font-size: 18px
+
+
+    &_ring
+      font-size: 18px
+  
+
+
+
+
+
+.product-views
+  margin-bottom: 20px
+  &__list
+    @extend .sort-sect__list
+    text-align: center
+    padding: 30px 40px
+    padding-top: 40px 
+  h2,h1 
+    margin-bottom: 20px
+    font-size: 30px
+    line-height: 28px
+  &__item
+    margin-bottom: 10px
+    a 
+      display: block
+
+    img
+      margin-bottom: 20px
+      max-width: 151px
+
+  &__text
+    color: $blue-color
+    font-family: "RobotoCondensedBold"
+    font-size: 20px
+    a 
+      color: inherit
+
+
+
+
+
+.contacts-geo
+  h2,h1 
+    margin-bottom: 20px
+    font-size: 30px
+  &__list
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.1)
+    border-radius: 6px
+    background-color: #ffffff
+    padding: 30px 40px
+    margin-bottom: 30px
+  &__leftList 
+    margin-bottom: 60px
+    p 
+      position: relative
+      padding-left: 30px
+      margin-bottom: 20px
+      a 
+        color: inherit
+        &:hover 
+          text-decoration: underline
+      i 
+        position: absolute
+        left: 0
+        top: 0
+        font-size: 20px
+  &__rightList
+    padding-left: 50px
+  &__cartW
+    max-width: 610px
+  &__cart
+    margin-bottom: 30px
+    position: relative
+    padding-top: 56.25%
+    height: 0
+    overflow: hidden
+    border: none
+    iframe
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      border: none
+
+  &__text 
+    color: $blue-color
+    max-width: 590px
+
+
+
+
+
+
+
+
+.contacts-descr
+    margin-bottom: 30px
+    
+    &__item 
+      margin-bottom: 20px 
+      padding-left: 35px
+      h3 
+        color: #00235d
+        font-family: "RobotoCondensedBold"
+        font-size: 18px
+        line-height: 1.2
+        text-transform: uppercase
+        margin-bottom: 20px
+        p 
+          line-height: 24px
+    &__ul
+      li 
+        padding-left: 35px
+        position: relative
+        margin-bottom: 15px
+        span 
+          color: $red-color
+          font-family: "RobotoBold"
+          font-size: 18px
+          margin-left: 2px
+          margin-right: 2px
+        i 
+          position: absolute
+          left: 0
+          color: $red-color
+          font-size: 24px
+
+
+
+.rtable-section
+  padding: 30px 50px
+  margin-bottom: 30px
+
+
+.rtableWrap
+
+
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.1)
+  border-radius: 5px
+  background-color: #ffffff
+  padding-top: 20px
+  position: relative
+  p.rtable__help
+    color: $red-color
+    font-size: 13px
+    position: absolute
+    top: 10px
+    right: 15px
+    margin-bottom: 20px
+    i 
+      display: inline-block
+      margin-right: 5px
+      vertical-align: middle
+
+
+.rtable, .rtable--flip tbody
+  // optional - enable iOS momentum scrolling
+  -webkit-overflow-scrolling: touch
+  // scrolling shadows
+  background: radial-gradient(left, ellipse, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 75%) 0 center, radial-gradient(right, ellipse, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 75%) 100% center
+  background-size: 10px 100%, 10px 100%
+  background-attachment: scroll, scroll
+  background-repeat: no-repeat
+
+
+// change these gradients from white to your background colour if it differs
+// gradient on the first cells to hide the left shadow
+
+.rtable td:first-child, .rtable--flip tbody tr:first-child
+
+  background-repeat: no-repeat
+  background-size: 20px 100%
+
+// gradient on the last cells to hide the right shadow
+
+.rtable td:last-child, .rtable--flip tbody tr:last-child
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%)
+  background-repeat: no-repeat
+  background-position: 100% 0
+  background-size: 20px 100%
+
+.rtable
+  &__price
+    color: #5e6977
+    font-family: "RobotoBold"
+    font-size: 18px
+    line-height: 25px
+    margin-bottom: 5px
+  &__btn
+      margin: auto
+      a.btn 
+          width: 113px  
+          min-width: 113px
+  &__title
+    max-width: 125px
+    text-align: center
+    color: #00235d
+    font-family: "RobotoCondensed"
+    font-size: 30px
+    font-weight: 700
+    line-height: 36px
+  th
+    font-size: 14px
+    text-align: left
+
+    width: 250px
+
+    .r-height
+      height: 44px
+      overflow: hidden
+      display: block
+    &:first-child
+      height: 200px
+      padding-top: 30px
+    &:last-child
+      background-color: #FFF!important
+      padding-bottom: 30px
+    
+    padding: 6px 12px
+    padding-left: 30px
+
+    &:nth-child(2n)
+      background-color: #f7f7f7
+    &.b-blue
+      background-color: $blue-color
+      color: #fff
+
+  td
+    padding: 6px 12px
+    width: 147px
+
+    text-align: center  
+    h3 
+      color: $blue-color
+      font-size: 16px
+      font-family: "RobotoCondensedBold"
+      line-height: 18px
+      overflow-y: hidden
+      height: 35px
+      margin-bottom: 10px
+      a 
+        display: block
+        color: inherit
+    img 
+      height: 85px
+      width: auto
+      display: block
+      margin: auto
+      margin-bottom: 10px
+
+    span.delete
+      color: $red-color
+      font-size: 14px 
+      cursor: pointer
+
+      i 
+        display: inline-block
+        vertical-align: middle
+
+    .r-height
+      height: 44px
+      overflow: hidden
+      display: block
+    &:nth-child(2n)
+      background-color: #f7f7f7
+    &:first-child
+      height: 200px
+      padding-top: 30px
+    &:last-child
+      background-color: #FFF
+      padding-bottom: 30px
+    &.b-blue
+      background-color: $blue-color
+      color: #fff
+     
+
+
+
+.rtable--flip
+  display: flex
+  overflow: hidden
+  background: none
+  thead
+    display: flex
+    flex-shrink: 0
+    min-width: min-content
+  tbody
+    display: flex
+    position: relative
+    overflow-x: auto
+    overflow-y: hidden
+  tr
+    display: flex
+    flex-direction: column
+    min-width: min-content
+    flex-shrink: 0
+  td, th
+    display: block
+  td
+    background-image: none !important
+    // border-collapse is no longer active
+    border-left: 0
+
+  th:not(:last-child), td:not(:last-child)
+    border-bottom: 0
+
+
+// border-collapse is no longer active
+
+
+.news-small
+  h2,h1
+    color: $blue-color
+    font-family: "RobotoCondensedBold"
+    font-size: 30px
+    margin-bottom: 20px
+
+  &__sort 
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.1)
+    border-radius: 6px
+    background-color: #FFF
+    margin-bottom: 30px
+    min-height: 80px
+
+  &__sortL 
+    padding: 15px
+    padding-top: 20px
+
+  &__sortR 
+    background-color: $blue-color
+    @include clearfix
+    padding:  15px 25px
+    padding-top: 20px
+    min-height: 80px
+    border-radius: 6px
+    p 
+      color: #fefefe 
+      font-size: 16px
+      font-family: "RobotoBold"
+      position: relative
+      padding-left: 30px
+      float: left
+      margin-right: 20px
+      margin-top: 10px
+      margin-bottom: 10px
+      i 
+        position: absolute
+        left: 0
+        top: -2px
+        color: #fff 
+        font-size: 24px
+  &__button
+    width: 63px
+    height: 42px
+    border-radius: 5px
+    background-color: $red-color
+    color: #fff
+    font-family: "RobotoMedium"
+    font-size: 16px
+    position: absolute
+    right: 0px
+    top: 0
+  &__input 
+    position: relative
+    float: left
+    input 
+      border-radius: 5px 6px 6px 5px 
+      background-color: #fff
+      border: 2px solid #e1e8ee
+      height: 42px
+      line-height: 42px
+      padding-left: 15px
+      padding-right: 70px
+      outline: none 
+      width: 100%
+      &:focus,
+      &:hover
+        border: 2px solid $red-color
+
+
+  &__selectW 
+    display: inline-block
+    width: 49%
+    p 
+      float: left
+      margin-top: 7px
+      margin-right: 10px
+      margin-bottom: 10px
+
+    .js__select
+      width: 124px
+
+
+  &__item
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.1)
+    border-radius: 6px
+    background-color: #ffffff
+    text-align: center
+    padding: 15px
+    padding-top: 30px
+    margin-bottom: 30px
+    h4     
+      overflow: hidden
+      max-width: 205px
+      margin: auto
+      margin-bottom: 20px
+      height: 47px
+      line-height: 1.2
+      color: $blue-color
+      font-family: "RobotoMedium"
+      font-size: 14px
+      font-weight: 500
+      text-transform: uppercase    
+      a 
+        color: inherit  
+  &__date 
+    text-align: left
+    margin-bottom: 15px
+    position: relative
+    padding-left: 25px
+    color: #5e6977
+    font-size: 14px
+    line-height: 1.3
+    font-family: "RobotoBold"
+
+    i 
+      position: absolute
+      left: 0
+      top: -2px
+
+  &__text 
+    text-align: left
+    color: #86939e 
+    font-size: 14px
+    line-height: 1.7
+    height: 226px
+    overflow-y: hidden
+    margin-bottom: 20px
+
+  &__img
+    margin-left: -15px
+    margin-right: -15px
+    height: 154px
+    width: auto
+    margin-bottom: 20px
+    img 
+      width: 100%
+      height: 100%
+
+.news-full 
+  &__left
+    padding: 10px
+    padding-bottom: 45px
+    
+  &__img 
+    margin-bottom: 40px
+  &__date 
+    margin-bottom: 40px
+    @include clearfix
+    .news-small__date
+        float: left
+  &__soc 
+    float: right
+
+  &__descr 
+    margin-bottom: 40px
+    p 
+      color: #00235d
+      font-size: 14px
+      line-height: 1.3
+
+
+
+
+  &__title
+    h3 
+      margin-bottom: 20px
+      font-family: "RobotoCondensedBold"
+      text-transform: uppercase
+      color: #00235d
+      font-size: 18px
+      line-height: 1.3
+  &__text
+    p 
+      margin-bottom: 20px
+      &:last-child 
+        margin-bottom: 0
+
+  &__sortR 
+    padding: 15px 20px
+    margin-bottom: 37px
+    p 
+      font-size: 15px
+      float: none
+      margin-right: 0
+    .news-small__input 
+      float: none
+  &__banner 
+    margin-bottom: 37px
+
+
+.order-popupW
+  display: none
+
+.order-popup 
+  width: 360px
+  margin: auto
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.4)
+  border-radius: 4px
+  background-color: #ffffff
+  padding: 15px 25px
+  position: relative
+  &__title
+    margin-bottom: 20px
+    span
+      position: absolute
+      right: 15px
+      top: 15px
+      cursor: pointer
+      transition: transform .5s
+      &:hover
+        transform: scale(1.4)
+
+    h2,h1 
+      line-height: 1.2
+      font-size: 30px
+      font-family: "RobotoCondensedBold"
+      width: 220px
+      margin: auto
+
+
+  &__img 
+    width: 120px
+    height: 120px
+    margin: 20px auto
+
+  &__input,
+  &__select
+    margin-bottom: 20px
+    position: relative
+    i 
+      position: absolute
+      left: 10px
+      top: 9px
+      font-size: 24px
+
+    input 
+      width: 100%
+      height: 42px
+      line-height: 42px
+      border-radius: 5px 6px 6px 5px
+      border: 2px solid #e1e8ee
+      background-color: rgba(57, 173, 209, 0)
+      padding-left: 45px
+      padding-right: 15px
+      outline: none
+      &:focus,
+      &:hover
+        border: 2px solid red
+
+
+  &__select
+    i 
+      z-index: 99991
+    &.js__selectWrap
+      width: 100%!important
+     
+    select.js__select
+      width: 100%!important
+      padding-left: 70px!important
+
+  &__button
+    width: 100%
+    button
+      width: 100%
+      max-width: 100%
+
+
+
+
+// LANDING 1
+
+.landing
+
+
+
+
+.landing-complex
+  &__sect
+    padding: 30px
+    padding-top: 50px
+    margin-bottom: 30px
+    .container
+        padding: 0
+
+    
+
+
+  &__item
+    margin-bottom: 30px
+    .complex-sect__right_icon
+        height: 60px
+        
+        img 
+          width: 100%
+          height: auto
+          max-height: 100%
+            
+          &:hover
+              transform: scale(1.2)
+          
+    h3 
+      text-transform: none
+      font-size: 20px
+    p 
+      color: #000000 
+      font-size: 16px 
+      line-height: 20px 
+
+
+.news-sect__bg.news-sect__landingBg
+  background: url(../img/landing/news-landingBg.png) no-repeat
+  min-height: 410px
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.1)
+  border-radius: 5px
+  background-color: rgba(0, 0, 0, 0.9)
+  background-size: cover 
+  background-position: center
+  margin-bottom: 20px
+  h2,h1 
+    line-height: 1.1
+  h1 
+    line-height: 1.1
+
+
+.news-sect__landingText
+  margin-bottom: 20px
+  p
+    color: #fff 
+    font-size: 14px
+    font-family: "RobotoLight"
+    margin-bottom: 15px
+    &:last-child
+      margin-bottom: 0
+
+
+.slider-sect__landingImg
+  margin-top: 50px
+
+
+.landing-gen 
+  padding: 30px 0
+  padding-bottom: 0px
+  
+  &__title
+    h2,h1 
+      margin-bottom: 60px
+      font-size: 36px
+      line-height: 1.2
+
+
+.landing-constr
+  background-color: #FFF
+  padding: 50px 0
+  padding-bottom: 10px
+  margin-bottom: 50px
+  &__title
+    h2,h1 
+      margin-bottom: 50px
+      font-size: 36px
+      line-height: 1.2
+  &__item
+    margin-bottom: 30px
+
+    
+
+    h3 
+      color: $red-color
+      font-size: 20px
+      font-family: "RobotoCondensedBold"
+      margin-bottom: 15px
+
+  &__text 
+    font-size: 15px
+    padding-left: 30px
+    max-width: 330px
+    position: relative
+    i 
+      position: absolute
+      top: 0
+      left: 0
+      font-size: 24px
+      color: $red-color    
+
+    span
+      color: $blue-color
+      font-family: "RobotoBold"
+      margin-right: 5px
+
+    a 
+      text-decoration: underline
+      color: $blue-color
+      font-family: "RobotoRegular"
+      margin-left: 4px
+
+
+
+
+
+
+
+.landing-gallery
+  margin-bottom: 50px
+
+  .row 
+    margin-left: -5px
+    margin-right: -5px
+
+  &__item
+      padding: 5px
+
+
+  
+
+
+  
+
+
+
+  
+
+
+
+    
+
+
+
+
+ 
+ 
+
+  
+
+
+
+
+.landing-gen
+  &__imgW
+    position: relative
+    max-width: 906px
+    margin: auto
+
+
+.landing-gen__circle 
+  position: absolute
+  top: 50% 
+  cursor: pointer
+  &.cord 
+    &__left
+      position: absolute
+      left: 30%
+      top: 58% 
+    &__right
+      top: 28%
+      right: 10%  
+
+    &__bottom
+      bottom: 0%
+      left: 50%
+
+
+
+
+
+.icon
+  position: absolute
+  width: 36px
+  height: 36px
+  background: url('../img/landing/pictogram.png') no-repeat
+  
+  background-position: center 
+  margin: auto
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  z-index: 3
+
+  -webkit-border-radius: 50px
+  -moz-border-radius: 50px
+  border-radius: 50px
+
+
+.pulse1
+  position: absolute
+  width: 50px
+  height: 50px
+  margin: auto
+  top: 0
+  left: -6px
+  bottom: 0
+  right: 0
+  z-index: 1
+  opacity: 0
+  border: 3px solid rgba(255, 255, 255, 0.1)
+  -webkit-animation: pulsejg1 4s linear infinite
+  -moz-animation: pulsejg1 4s linear infinite
+  animation: pulsejg1 4s linear infinite
+  -webkit-border-radius: 50px
+  -moz-border-radius: 50px
+  border-radius: 50px
+  -webkit-box-shadow: inset 0px 0px 15px 10px rgba(0, 0, 0, 0.6)
+  -moz-box-shadow: inset 0px 0px 15px 10px rgba(0, 0, 0, 0.6)
+  box-shadow: inset 0px 0px 15px 10px rgba(0, 0, 0, 0.6)
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+
+.pulse2
+  position: absolute
+  width: 50px
+  height: 50px
+  margin: auto
+  top: 0
+  left: -7px
+  bottom: 0
+  right: 0
+  z-index: 2
+  opacity: 0
+  border: 1px solid rgba(255, 255, 255, 0)
+  -webkit-animation: pulsejg2 4s linear infinite
+  -moz-animation: pulsejg2 4s linear infinite
+  animation: pulsejg2 4s linear infinite
+  -webkit-border-radius: 999px
+  -moz-border-radius: 999px
+  border-radius: 999px
+  -webkit-box-shadow: inset 0px 0px 12px 5px rgba(255, 255, 255, 0.8)
+  -moz-box-shadow: inset 0px 0px 12px 5px rgba(255, 255, 255, 0.8)
+  box-shadow: inset 0px 0px 12px 5px rgba(255, 255, 255, 0.8)
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+
+@-webkit-keyframes pulsejg1
+  0%
+    -webkit-transform: scale(0.6)
+    opacity: 0
+
+  50%
+    -webkit-transform: scale(0.6)
+    opacity: 0
+
+  60%
+    -webkit-transform: scale(0.9)
+    opacity: .2
+
+  70%
+    -webkit-transform: scale(1.1)
+    opacity: .35
+
+  80%
+    -webkit-transform: scale(1.25)
+    opacity: .2
+
+  100%
+    -webkit-transform: scale(1.4)
+    opacity: 0
+
+
+@-moz-keyframes pulsejg1
+  0%
+    -moz-transform: scale(0.6)
+    opacity: 0
+
+  50%
+    -moz-transform: scale(0.6)
+    opacity: 0
+
+  60%
+    -moz-transform: scale(0.9)
+    opacity: .2
+
+  70%
+    -moz-transform: scale(1.1)
+    opacity: .35
+
+  80%
+    -moz-transform: scale(1.25)
+    opacity: .2
+
+  100%
+    -moz-transform: scale(1.4)
+    opacity: 0
+
+
+@keyframes pulsejg1
+  0%
+    transform: scale(0.6)
+    opacity: 0
+
+  50%
+    transform: scale(0.6)
+    opacity: 0
+
+  60%
+    transform: scale(0.9)
+    opacity: .1
+
+  70%
+    transform: scale(1.1)
+    opacity: .25
+
+  80%
+    transform: scale(1.25)
+    opacity: .1
+
+  100%
+    transform: scale(1.4)
+    opacity: 0
+
+
+@-webkit-keyframes pulsejg2
+  0%
+    -webkit-transform: scale(0.6)
+    opacity: 0
+
+  40%
+    -webkit-transform: scale(0.8)
+    opacity: .05
+
+  50%
+    -webkit-transform: scale(1)
+    opacity: .1
+
+  60%
+    -webkit-transform: scale(1.1)
+    opacity: .3
+
+  80%
+    -webkit-transform: scale(1.2)
+    opacity: .1
+
+  100%
+    -webkit-transform: scale(1.3)
+    opacity: 0
+
+
+@-moz-keyframes pulsejg2
+  0%
+    -moz-transform: scale(0.6)
+    opacity: 0
+
+  40%
+    -moz-transform: scale(0.8)
+    opacity: .05
+
+  50%
+    -moz-transform: scale(1)
+    opacity: .1
+
+  60%
+    -moz-transform: scale(1.1)
+    opacity: .3
+
+  80%
+    -moz-transform: scale(1.2)
+    opacity: .1
+
+  100%
+    -moz-transform: scale(1.3)
+    opacity: 0
+
+
+@keyframes pulsejg2
+  0%
+    transform: scale(0.6)
+    opacity: 0
+
+  40%
+    transform: scale(0.8)
+    opacity: .05
+
+  50%
+    transform: scale(1)
+    opacity: .1
+
+  60%
+    transform: scale(1.1)
+    opacity: .3
+
+  80%
+    transform: scale(1.2)
+    opacity: .1
+
+  100%
+    transform: scale(1.3)
+    opacity: 0
+
+
+
+
+.landing-gen__circleDescr
+
+  padding: 20px 
+  display: none
+  box-shadow: 4px 7px 16px rgba(0, 18, 49, 0.3)
+  border-radius: 10px
+  background-color: #ffffff
+  margin-bottom: 10px
+  &.active
+    display: block
+
+  h3 
+    color: $blue-color
+    margin-bottom: 10px
+    font-size: 18px
+    font-family: "RobotoCondensedBold"
+    text-align: center
+
+  p 
+    color: #000000
+    font-size: 13px
+    line-height: 20px
+    text-align: justify
+    
+.land-text
+  padding: 30px
+
+
+/* ==========================================================================
+   Style Select
+   ========================================================================== */
+
+
+.js__selectWrap .select2-container--default .select2-selection--single
+  border: 2px solid #e1e8ee
+
+.js__selectWrap .select2-container .select2-selection--single
+  height: 42px
+  line-height: 42px
+
+
+.js__selectWrap span.select2.select2-container.select2-container--default.select2-container--below.select2-container--focus
+  border: none
+  outline: none
+
+.js__selectWrap .select2-container .select2-selection--single .select2-selection__rendered
+  padding-left: 20px
+
+
+.js__selectWrap .select2-container--default .select2-selection--single .select2-selection__arrow
+  right: 1px
+  top: 1px
+
+
+.js__selectWrap .select2-container--default .select2-selection--single .select2-selection__rendered
+  line-height: 42px
+  color: inherit
+
+
+.js__selectWrap .select2-container--default .select2-selection--single .select2-selection__arrow b
+  margin-left: -8px
+  margin-top: 4px
+
+
+.js__selectWrap select
+  outline: none
+  &:active
+    outline: none
+  &:focus
+    outline: none
+
+
+.js__selectWrap-grey .select2-container--default .select2-selection--single
+  background-color: #f0f4f7
+
+.js__selectWrap-grey .select2-container--default .select2-selection--single
+  border: none
+
+
+.js__selectWrap-grey .select2-container .select2-selection--single
+  height: 42px
+  line-height: 42px
+
+
+
+.js__selectWrap-grey span.select2.select2-container.select2-container--default.select2-container--below.select2-container--focus
+  border: none
+  outline: none
+
+.js__selectWrap-grey .select2-container .select2-selection--single .select2-selection__rendered
+  padding-left: 20px
+
+
+.js__selectWrap-grey .select2-container--default .select2-selection--single .select2-selection__arrow
+  right: 1px
+  top: 1px
+
+
+.js__selectWrap-grey .select2-container--default .select2-selection--single .select2-selection__rendered
+  line-height: 42px
+  color: inherit
+
+
+.js__selectWrap-grey .select2-container--default .select2-selection--single .select2-selection__arrow b
+  margin-left: -8px
+  margin-top: 4px
+
+
+.js__selectWrap-grey select
+  outline: none
+  &:active
+    outline: none
+  &:focus
+    outline: none
+
+
+.js__selectWrap-grey span.select2-selection.select2-selection--single:focus,
+.js__selectWrap span.select2-selection.select2-selection--single:focus
+  &:focus
+    outline: none
+
+
+.select2-dropdown
+  border: 2px solid #e1e8ee
+
+
+.select2-container--default .select2-results__option[aria-selected=true]
+  background-color: #FFF
+  color: $blue-color
+
+
+.select2-container--default .select2-results__option--highlighted[aria-selected]
+  background-color: $blue-color
+  color: #fff
+
+
+.order-popup__select.js__selectWrap .select2-container .select2-selection--single .select2-selection__rendered
+  padding-left: 40px
+
+.order-popup__select.js__selectWrap .select2-container
+  width: 100%!important
+
+span.select2-container.select2-container--default.select2-container--open
+  z-index: 99999
+
+
+/* ==========================================================================
+   Style Select END
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Style Scroll
+   ========================================================================== */
+
+.style__scroll
+  &::-webkit-scrollbar-button
+    background-repeat: no-repeat
+    width: 8px
+    height: 0px
+
+  &::-webkit-scrollbar-track  //цвет дорожки по которой ездит ползунок
+    background-color: #ecedee
+
+  &::-webkit-scrollbar-thumb  // сам ползунок
+    -webkit-border-radius: 6px
+    border-radius: 6px
+    background-color: #cc0000
+    &:hover
+      background-color: rgba(204, 0, 0, 0.59)
+
+  &::-webkit-resizer
+
+    background-repeat: no-repeat
+    width: 4px
+    height: 20px
+
+  &::-webkit-scrollbar  //ширина полосы прокрутки
+    width: 8px
+
+
+
+
+
+
+
+
+.success
+  width: 300px
+  color: #212121
+  margin: auto
+  padding: 20px
+  border: 2px solid green
+  display: none
+  text-align: center
+  background-color: #fff
+  border-radius: 10px
+  font-size: 16px
+  
+
+
+
+
+
+/* ==========================================================================
+   Adaptive
+   ========================================================================== */
+@import "_media.sass"

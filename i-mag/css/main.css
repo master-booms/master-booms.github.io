@@ -847,7 +847,7 @@ body {
   font-weight: 300;
   overflow-x: hidden;
   min-width: 320px;
-  max-width: 1920px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -4251,6 +4251,18 @@ input:focus {
   opacity: 1;
 }
 
+.search__input input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.search__input input:focus:-moz-placeholder {
+  color: transparent;
+}
+
+.search__input input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
 .phone {
   margin-top: 25px;
   margin-bottom: 10px;
@@ -4430,7 +4442,7 @@ input:focus {
 }
 
 .filter-cart {
-  padding-top: 9px;
+  padding-top: 11px;
   float: right;
 }
 
@@ -4455,7 +4467,7 @@ input:focus {
 .filter-cart__price {
   display: inline-block;
   vertical-align: middle;
-  color: #ffffff;
+  color: #0094d9;
   font-family: "ProximaNova-Regular";
   font-size: 15px;
   font-weight: 700;
@@ -4466,9 +4478,18 @@ input:focus {
   border-radius: 6px;
 }
 
+.filter-cart__price a {
+  color: #fff;
+}
+
+.filter-cart__price a:hover {
+  color: #0094d9;
+  text-decoration: none;
+}
+
 .section {
-  padding: 45px 0;
-  padding-bottom: 65px;
+  padding: 35px 0;
+  padding-bottom: 45px;
 }
 
 .section--white {
@@ -4581,6 +4602,7 @@ input:focus {
   font-weight: 400;
   line-height: 1.4;
   text-transform: uppercase;
+  text-decoration: underline;
   text-align: center;
   max-width: 190px;
   margin: 0 auto;
@@ -4589,6 +4611,7 @@ input:focus {
 
 .products__titleLink:hover {
   color: #333;
+  text-decoration: none;
 }
 
 .products__priceW {
@@ -4671,7 +4694,7 @@ input:focus {
 .products__add:hover {
   text-decoration: none;
   color: #fff;
-  background-color: #000;
+  background-color: #251F31;
 }
 
 .products__btn {
@@ -4701,7 +4724,7 @@ input:focus {
 .products__btn:hover {
   text-decoration: none;
   color: #fff;
-  background-color: #000;
+  background-color: #251F31;
 }
 
 .stick {
@@ -5578,7 +5601,7 @@ input:focus {
   }
 
   .section {
-    padding-bottom: 45px;
+    padding-bottom: 35px;
   }
 
   .title--center {
@@ -5634,6 +5657,10 @@ input:focus {
   .filter-mnu ul {
     width: 750px;
     margin: 0 auto;
+  }
+
+  .dropdown__descr {
+    display: none;
   }
 
   .filter-cart {

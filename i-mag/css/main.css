@@ -6415,6 +6415,10 @@ input:focus {
 }
 
 @media only screen and (max-width: 480px) {
+  .char__smallText {
+    font-size: 12px;
+  }
+
   .footer-bottom__conf {
     font-size: 9px;
   }

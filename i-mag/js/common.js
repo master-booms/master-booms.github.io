@@ -40,14 +40,14 @@ $(function(){
 
 
 
-$('.product-descr__slider').bxSlider({
-  pagerCustom: '.product-descr__thumb',
+$('.gallery').bxSlider({
+  pagerCustom: '.gallery__thumb',
   controls: false
 });
 
 
 $(document).ready(function() {
-  $('.product-descr__slider').magnificPopup({
+  $('.gallery').magnificPopup({
 
     delegate: 'a',
     type:'image',
@@ -61,7 +61,19 @@ $(document).ready(function() {
 });
 
 
+//jQuery:
+$(".tab__item").not(":first").hide();
+$(".wrapper-tabs .tab").click(function() {
+  $(".wrapper-tabs .tab").removeClass("active").eq($(this).index()).addClass("active");
+  $(".tab__item").hide().eq($(this).index()).fadeIn()
+}).eq(0).addClass("active");
 
 
 
 
+
+
+
+$(".catalog__colorItem").click(function() {
+  $(this).toggleClass("active")
+})

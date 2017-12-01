@@ -4699,13 +4699,8 @@ input:focus {
   cursor: pointer;
 }
 
-.catalog__colorItem--width {
-  width: 100%;
-  padding: 2px 0px;
-  text-align: center;
-  height: 100%;
-  display: block;
-  border: 2px solid transparent;
+.catalog__colorItem:hover {
+  border: 2px solid #4891e1;
 }
 
 .catalog__colorItem--black {
@@ -4758,6 +4753,10 @@ input:focus {
   font-weight: 700;
 }
 
+.catalog__flashItem:hover {
+  border: 2px solid #4891e1;
+}
+
 .catalog__transfer {
   color: #333333;
   font-family: "PT Sans";
@@ -4767,6 +4766,12 @@ input:focus {
   margin-bottom: 25px;
   padding-left: 50px;
   position: relative;
+}
+
+.catalog__transfer span {
+  font-size: 12px;
+  display: block;
+  color: #0094d9;
 }
 
 .catalog__transfer:before {

@@ -4382,7 +4382,7 @@ input:focus {
   padding: 5px 12px;
   text-align: center;
   color: #ffffff;
-  font-family: "ProximaNova-Regular", sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 15px;
   font-weight: 700;
   line-height: 1.1;
@@ -4452,7 +4452,7 @@ input:focus {
   padding: 5px 12px;
   text-align: center;
   color: #ffffff;
-  font-family: "ProximaNova-Regular", sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 15px;
   font-weight: 700;
   line-height: 1.1;
@@ -4468,7 +4468,7 @@ input:focus {
   display: inline-block;
   vertical-align: middle;
   color: #0094d9;
-  font-family: "ProximaNova-Regular";
+  font-family: Arial, sans-serif;
   font-size: 15px;
   font-weight: 700;
   line-height: 1.1;
@@ -4485,6 +4485,18 @@ input:focus {
 .filter-cart__price a:hover {
   color: #0094d9;
   text-decoration: none;
+}
+
+.main--grey {
+  background-color: #f6f5f5;
+}
+
+.product__right {
+  background-color: #fff;
+}
+
+.product__left {
+  background-color: #fff;
 }
 
 .section {

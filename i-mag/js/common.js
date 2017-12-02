@@ -1,7 +1,7 @@
 
 
 
-  //mobile
+  //mobile menu
   var touch = $('.mobile-mnu');
   var menu = $('.filter-mnu');
  
@@ -39,6 +39,7 @@ $(function(){
 });
 
 
+//Gallery
 
 $('.gallery').bxSlider({
   pagerCustom: '.gallery__thumb',
@@ -61,7 +62,7 @@ $(document).ready(function() {
 });
 
 
-//jQuery:
+//Tabs
 $(".tab__item").not(":first").hide();
 $(".wrapper-tabs .tab").click(function() {
   $(".wrapper-tabs .tab").removeClass("active").eq($(this).index()).addClass("active");
@@ -72,8 +73,49 @@ $(".wrapper-tabs .tab").click(function() {
 
 
 
-
+//Color Pick
 
 $(".catalog__colorItem").click(function() {
   $(this).toggleClass("active")
 })
+
+
+
+//Accordion Filter
+
+$(".catalog-filter__title").click(function() {
+  $(this).toggleClass("active");
+  $(this).siblings(".catalog-filter__hidden").slideToggle();
+})
+
+//Filter Mobile Button
+
+  var touch2 = $('.catalog-filterMobile');
+  var menu2 = $('.catalog-filter');
+ 
+  $(touch2).on('click', function(e) {
+    e.preventDefault();
+    menu2.slideToggle();
+  });
+  $(window).resize(function(){
+    var w2 = $(window).width();
+    if(w2 > 760 && menu2.is(':hidden')) {
+      menu2.removeAttr('style');
+    }
+  });
+
+//Slider range
+
+ $( function() {
+    $( "#slider-range" ).slider({
+      range: true,
+      min: 19940,
+      max: 91250,
+      values: [ 23940, 88250 ],
+      slide: function( event, ui ) {
+        $( "#amount" ).val("от" + " " + ui.values[ 0 ] + " " + "Р.");
+        $( "#amount2" ).val("от" + " " + ui.values[ 1 ] + " " + "Р." );
+      }
+    });
+    
+  } );

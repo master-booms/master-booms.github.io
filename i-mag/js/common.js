@@ -30,14 +30,22 @@ $(".js__sticker").sticky({
 })
 
 
+//Spoile Catalog
+
+ $(".js__spoilerMore").on('click', function(e) {
+   e.preventDefault();
+    $(".js__spoiler").slideToggle(1000);
+  });
 
 
+
+//CART POPUP AND SLIDER
 
 
 ;(function($) {
   $(function() {
     $('.js__click').bind('click', function(e) {
-    e.preventDefault();
+      e.preventDefault();
     $('.cart-popupW').bPopup();
  $('.cart-slider').bxSlider({
 
@@ -54,12 +62,6 @@ $(".js__sticker").sticky({
     nextText: "",
     auto: true
 
-
-  
-
-
-    
-
     
   });    
   });
@@ -67,6 +69,9 @@ $(".js__sticker").sticky({
 });
 
 })(jQuery);
+
+
+
 
 
 //banner
@@ -171,3 +176,29 @@ $(".catalog-filter__title").click(function() {
     });
     
   } );
+
+
+
+
+
+
+$(document).ready(function() {
+    $("#slider-range").slider({
+        range: true,
+        min: 19940,
+        max: 91250,
+        step: 1,
+        values: [ 23940, 88250 ],
+        animate: 300,
+        slide: function(event, ui) {
+            for (var i = 0; i < ui.values.length; ++i) {
+                $("input.sliderValue[data-index=" + i + "]").val(ui.values[i]);
+            }
+        }
+    });
+
+    $("input.sliderValue").change(function() {
+        var $this = $(this);
+        $("#slider-range").slider("values", $this.data("index"), $this.val());
+    });
+});

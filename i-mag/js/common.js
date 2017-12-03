@@ -75,7 +75,7 @@ $(function(){
   $('.banner').bxSlider({
     mode: 'fade',
     captions: true,
-    
+    controls: false,    
   });
 });
 
@@ -102,7 +102,16 @@ $(document).ready(function() {
   });
 });
 
-//CART-SLIDER
+//Order RADIO-BUTTONS
+
+$(".order-check__item").on("click", function() {
+    $(".order-check__item").removeClass("active");
+    $(this).find("input[type='radio']").prop("checked", true);
+    $(this).addClass("active");
+
+
+});
+
 
 
 //Tabs

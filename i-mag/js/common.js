@@ -17,9 +17,10 @@
   });
 
 
-
-
-
+//Scroll to anckor
+  $(".container-text a").mPageScroll2id({
+    offset : 20
+  });
 
 
 //Fixed Header auto-height
@@ -29,6 +30,46 @@ $(".js__sticker").sticky({
 })
 
 
+
+
+
+
+;(function($) {
+  $(function() {
+    $('.js__click').bind('click', function(e) {
+    e.preventDefault();
+    $('.cart-popupW').bPopup();
+ $('.cart-slider').bxSlider({
+
+
+    slideWidth: 170,
+    minSlides: 2,
+    maxSlides: 7,
+    moveSlides: 1,
+    slideMargin: 30,
+    pager: false,
+    nextSelector: ".cart-slider__right",
+    prevSelector: ".cart-slider__left",
+    prevText: "",
+    nextText: "",
+    auto: true
+
+
+  
+
+
+    
+
+    
+  });    
+  });
+
+});
+
+})(jQuery);
+
+
+//banner
 
 $(function(){
   $('.banner').bxSlider({
@@ -60,6 +101,8 @@ $(document).ready(function() {
 
   });
 });
+
+//CART-SLIDER
 
 
 //Tabs

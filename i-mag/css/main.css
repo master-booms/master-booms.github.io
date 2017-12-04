@@ -5847,7 +5847,7 @@ input:focus {
   padding: 15px 25px;
   background-color: #FFF;
   display: none;
-  position: fixed !important;
+  position: absolute !important;
   top: 50% !important;
   left: 50% !important;
   -webkit-transform: translate(-50%, -50%);

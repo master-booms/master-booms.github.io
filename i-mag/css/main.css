@@ -5096,6 +5096,7 @@ input:focus {
   position: absolute;
   left: 0;
   top: -5px;
+  background: url(../img/sort-spite.png);
 }
 
 .catalog-sort__item label i {
@@ -5123,16 +5124,15 @@ input:focus {
 }
 
 .catalog-sort__item label.catalog-sort__link--price:hover:before {
-  background: url(../img/icon-price.png) no-repeat;
+  background-position: -10px -10px;
+  width: 24px;
+  height: 24px;
 }
 
 .catalog-sort__item label.catalog-sort__link--price:before {
-  background: url(../img/moneta.png) no-repeat;
+  background-position: -54px -54px;
   width: 24px;
   height: 24px;
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
 }
 
 .catalog-sort__item label.catalog-sort__link--price i {
@@ -5146,7 +5146,9 @@ input:focus {
 }
 
 .catalog-sort__item input[type=radio]:checked + label.catalog-sort__link--price:before {
-  background: url(../img/icon-price.png) no-repeat;
+  background-position: -10px -10px;
+  width: 24px;
+  height: 24px;
 }
 
 .catalog-sort__item input[type=radio]:checked + label.catalog-sort__link--price i {
@@ -5173,17 +5175,14 @@ input:focus {
 }
 
 .catalog-sort__item label.catalog-sort__link--popular:hover:before {
-  background: url(../img/icon-star_h.png) no-repeat;
+  background-position: -10px -54px;
 }
 
 .catalog-sort__item label.catalog-sort__link--popular:before {
-  background: url(../img/icon-star.png) no-repeat;
+  background-position: -54px -10px;
   width: 24px;
   height: 24px;
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
-  left: 5px;
+  left: 4px;
 }
 
 .catalog-sort__item label.catalog-sort__link--popular i {
@@ -5197,7 +5196,7 @@ input:focus {
 }
 
 .catalog-sort__item input[type=radio]:checked + label.catalog-sort__link--popular:before {
-  background: url(../img/icon-star_h.png) no-repeat;
+  background-position: -10px -54px;
 }
 
 .catalog-sort__item input[type=radio]:checked + label.catalog-sort__link--popular i {
@@ -5217,17 +5216,13 @@ input:focus {
 }
 
 .catalog-sort__item label.catalog-sort__link--new:hover:before {
-  background: url(../img/icon-new_h.png) no-repeat;
+  background-position: -98px -48px;
 }
 
 .catalog-sort__item label.catalog-sort__link--new:before {
-  background: url(../img/icon-new.png) no-repeat;
+  background-position: -98px -10px;
   width: 24px;
-  height: 24px;
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
-  left: 5px;
+  height: 18px;
   top: -2px;
 }
 
@@ -5236,7 +5231,7 @@ input:focus {
 }
 
 .catalog-sort__item input[type=radio]:checked + label.catalog-sort__link--new:before {
-  background: url(../img/icon-new_h.png) no-repeat;
+  background-position: -98px -48px;
 }
 
 .catalog-sort__item input[type=radio]:checked + label.catalog-sort__link--new i {
@@ -5443,8 +5438,11 @@ input:focus {
 }
 
 .catalog-filter__hidden {
-  display: none;
   margin-top: 15px;
+}
+
+.catalog-filter__hidden--hide {
+  display: none;
 }
 
 .catalog-filter__checkbox {

@@ -42,16 +42,39 @@ $(".js__sticker").sticky({
 //CART POPUP AND SLIDER
 
 
-;(function($) {
-  $(function() {
-    $('.js__click').bind('click', function(e) {
-      e.preventDefault();
-    $('.cart-popupW').bPopup();
+// ;(function($) {
+//   $(function() {
+//     $('.js__click').bind('click', function(e) {
+//       e.preventDefault();
+//     $('.cart-popupW').bPopup();
+//  $('.cart-slider').bxSlider({
+
+
+//     slideWidth: 160,
+//     minSlides: 2,
+//     maxSlides: 7,
+//     moveSlides: 1,
+//     slideMargin: 30,
+//     pager: false,
+//     nextSelector: ".cart-slider__right",
+//     prevSelector: ".cart-slider__left",
+//     prevText: "",
+//     nextText: "",
+//     auto: true
+
+    
+//   });    
+//   });
+
+// });
+
+// })(jQuery);
+
  $('.cart-slider').bxSlider({
 
 
     slideWidth: 160,
-    minSlides: 2,
+    minSlides: 6,
     maxSlides: 7,
     moveSlides: 1,
     slideMargin: 30,
@@ -63,14 +86,7 @@ $(".js__sticker").sticky({
     auto: true
 
     
-  });    
-  });
-
-});
-
-})(jQuery);
-
-
+  }); 
 
 
 
@@ -109,13 +125,22 @@ $(document).ready(function() {
 
 //Order RADIO-BUTTONS
 
-$(".order-check__item").on("click", function() {
-    $(".order-check__item").removeClass("active");
+$(".js__clickActive").on("click", function() {
+    $(".js__clickActive").removeClass("active");
     $(this).find("input[type='radio']").prop("checked", true);
     $(this).addClass("active");
 
 
 });
+
+
+
+
+// $(".js__sortClick").click(function() {
+//   $(this).toggleClass("active")
+// })
+
+
 
 
 

@@ -50,7 +50,7 @@ $(".js__sticker").sticky({
  $('.cart-slider').bxSlider({
 
 
-    slideWidth: 170,
+    slideWidth: 160,
     minSlides: 2,
     maxSlides: 7,
     moveSlides: 1,
@@ -161,25 +161,9 @@ $(".catalog-filter__title").click(function() {
     }
   });
 
+
+
 //Slider range
-
- $( function() {
-    $( "#slider-range" ).slider({
-      range: true,
-      min: 19940,
-      max: 91250,
-      values: [ 23940, 88250 ],
-      slide: function( event, ui ) {
-        $( "#amount" ).val("от" + " " + ui.values[ 0 ] + " " + "Р.");
-        $( "#amount2" ).val("от" + " " + ui.values[ 1 ] + " " + "Р." );
-      }
-    });
-    
-  } );
-
-
-
-
 
 
 $(document).ready(function() {
